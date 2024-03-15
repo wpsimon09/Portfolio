@@ -4,15 +4,15 @@
     import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
     import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
     import { onMount } from "svelte";
-    import  RectAreaLightUniformsLib from THREE;
-
+    import { RectAreaLightUniformsLib } from "./RectAreaLightUniformsLib";
+    import { RectAreaLightHelper }  from 'three/examples/jsm/helpers/RectAreaLightHelper';
     let canvas;
 
     onMount(() => {
         if (browser) {
             const scene = new THREE.Scene();
             const camera = new THREE.PerspectiveCamera(
-                45,
+                75,
                 canvas.clientHeight / canvas.clientWidth,
                 0.1,
                 1000
@@ -30,7 +30,7 @@
 
             const gltfLoader = new GLTFLoader();
 
-            const ambient = new THREE.AmbientLight(lightColor, 0.5);
+            const ambient = new THREE.AmbientLight(lightColor, 0.9);
             const directionLight = new THREE.DirectionalLight(
                 THREE.Color.NAMES.white,
                 10
@@ -47,32 +47,56 @@
                 directionLight.position.z
             );
 
-            const width = 50;
-            const height = 50;
-            const intensity = 100;
+            RectAreaLightUniformsLib.init();
+
+            const width = 10;
+            const height = 10;
+            const intensity = 2;
             const rectLight = new THREE.RectAreaLight(
                 0xffffff,
                 intensity,
                 width,
                 height
             );
-            rectLight.position.set(0, 5, 0);
+            rectLight.position.set(-5, 5, 0);
             rectLight.lookAt(0, 0, 0);
             scene.add(rectLight);
 
+
+            const rectLightHelper = new RectAreaLightHelper( rectLight );
+            //rectLight.add( rectLightHelper );
+
             scene.background = new THREE.Color(0x020617);
-            //scene.add(directionLight);
+            scene.add(directionLight);
             scene.add(ambient);
             scene.add(cube);
 
-            gltfLoader.load("models/statue/scene.gltf", (gltf) => {
+            let mixer;
+            let animationActions = [];
+            let activeAction;
+
+            gltfLoader.load("models/clock/scene.gltf", (gltf) => {
                 gltf.scene.receiveShadow = true;
+                gltf.scene.scale.set(0.1,0.1,0.1);
+                
+                
+                mixer = new THREE.AnimationMixer(gltf.scene);
+                
+                activeAction = mixer.clipAction(gltf.animations[0]);
+                
+                activeAction.play()
+        
+                
                 scene.add(gltf.scene);
-                console.log(gltf);
             });
+
+            const clock = new THREE.Clock();
+
+
 
             function animate() {
                 requestAnimationFrame(animate);
+                mixer.update(clock.getDelta());
                 renderer.render(scene, camera);
                 controls.update(0.01);
             }
@@ -81,4 +105,4 @@
     });
 </script>
 
-<canvas bind:this={canvas} class="w-full h-full bg-white" />
+<canvas bind:this={canvas} class="w-full h-full bg-white " />
