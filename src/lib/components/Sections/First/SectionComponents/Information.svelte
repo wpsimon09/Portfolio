@@ -10,5 +10,4 @@
     <p class="text-3xl ml-2 mt-5 dark:text-slate-300 text-slate-950">
         I am interested in web development and 3D
     </p>
-
 </section>
