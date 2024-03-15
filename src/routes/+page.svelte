@@ -1,9 +1,10 @@
 <script>
-	import Example from '$lib/components/Example.svelte';
-
+	import FirstSection from "$lib/components/Sections/First/FirstSection.svelte";
 </script>
 
-<Example/>
+<section class="w-full h-full">
+	<FirstSection/>
+</section>
 
 <style>
 </style>

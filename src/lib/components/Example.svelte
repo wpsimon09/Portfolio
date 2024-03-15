@@ -4,7 +4,7 @@
     import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
     import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
-    if(browser)
+    if(!browser)
     {
         
 const scene = new THREE.Scene();
