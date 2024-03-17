@@ -16,7 +16,7 @@
             const scene = new THREE.Scene();
             const camera = new THREE.PerspectiveCamera(
                 75,
-                canvas.clientHeight / canvas.clientWidth,
+                resizeHelper?.clientWidth / resizeHelper?.clientHeight,
                 0.1,
                 1000
             );
