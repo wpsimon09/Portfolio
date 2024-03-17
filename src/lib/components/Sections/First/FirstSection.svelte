@@ -1,19 +1,21 @@
 <script>
     import Information from "./SectionComponents/Information.svelte";
-    import Statue from "./SectionComponents/Statue.svelte";
+    import ThreeJs from "./SectionComponents/ThreeJS.svelte";
+    import ThreeJS from "./SectionComponents/ThreeJS.svelte";
     
 </script>
 
-<section class="w-full h-full flex flex-row items-center dark:bg-slate-950 bg-slate-100">
-    <div class="flex items-center w-full h-full">
-        <div class="ml-20 mb-40 w-1/3">
+<section class="w-full h-full relative dark:bg-slate-950 bg-slate-100">
+    <div class="flex flex-col items-center w-full h-full ">
+        <div class="z-10 flex flex-row h-full  items-center relative">
             <Information/>
         </div>
-        <div class="w-2/3 h-full p-20">
-            <Statue/>
-        </div>
+    </div>  
+    <div class="w-full absolute inset-0">
+        <ThreeJs />
     </div>
 </section>
+
 
 <style>
 
