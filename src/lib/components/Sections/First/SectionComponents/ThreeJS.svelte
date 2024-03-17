@@ -81,7 +81,6 @@
                 
             });
 
-            scene.background = new THREE.Color(0x020617);
             scene.add(rectLight);
             scene.add(directionLight);
             scene.add(ambient);
