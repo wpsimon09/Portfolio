@@ -10,9 +10,9 @@
     let canvas;
 
     onMount(() => {
-        const resizeHelper = document.getElementById("resizeHelper");
-
+        
         if (browser) {
+            const resizeHelper = document.getElementById("resizeHelper");
             const scene = new THREE.Scene();
             const camera = new THREE.PerspectiveCamera(
                 75,
@@ -68,16 +68,17 @@
 
             const rectLightHelper = new RectAreaLightHelper(rectLight);
 
-            window.addEventListener("resize", () => {});
-            resizeHelper?.addEventListener("resize", () => {
-                const SCREEN_HEIGHT = canvas.clientHeight;
-                const SCREEN_WIDTH = canvas.clientWidth;
+            window.addEventListener("resize", () => {
+                const SCREEN_HEIGHT = resizeHelper.clientHeight;
+                const SCREEN_WIDTH = resizeHelper.clientWidth;
 
                 camera.aspect = SCREEN_WIDTH / SCREEN_HEIGHT;
                 camera.updateProjectionMatrix();
 
                 renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
-                console.log("resizing");
+
+                console.log(resizeHelper);
+                
             });
 
             scene.background = new THREE.Color(0x020617);
@@ -115,6 +116,6 @@
     });
 </script>
 
-<div id="resize-helper">
-    <canvas bind:this={canvas} class="w-full h-full bg-white" />
+<div id="resizeHelper" class="w-full h-full flex flex-col items-center">
+    <canvas bind:this={canvas} class="h-full w-full bg-white" />
 </div>

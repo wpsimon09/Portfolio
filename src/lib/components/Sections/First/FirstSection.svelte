@@ -7,11 +7,11 @@
 
 <section class="w-full h-full relative dark:bg-slate-950 bg-slate-100">
     <div class="flex flex-col items-center w-full h-full ">
-        <div class="z-10 flex flex-row h-full  items-center relative">
+        <div class="z-10 flex flex-row h-full items-center relative">
             <Information/>
         </div>
     </div>  
-    <div class="w-full absolute inset-0">
+    <div class="w-full h-full  absolute inset-0">
         <ThreeJs />
     </div>
 </section>
