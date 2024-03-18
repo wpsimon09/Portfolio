@@ -15,12 +15,12 @@
             <Information/>
         </div>
     </div>  
-    <div class="w-full h-full flex-col items-center absolute inset-0">
-        <div class=" relative">   
-            <ThreeJs />
-            <div class="w-full  absolute ">
+    <div class="w-full h-full flex-col-reverse items-center absolute inset-0 ">
+        <div class="flex flex-col-reverse items-center relative ">   
+            <div class="w-full  absolute mb-10">
                 <ScrollDownIcon/>
             </div>
+            <ThreeJs />
         </div>
     </div>
 </section>
