@@ -9,13 +9,17 @@
     } else {
         textColor = "slate-100";
     }
-    
-    let centerLocation = isHoveredOn ? "" : "justify-center"
+    let centerLocation;
+    let margin;
+    $:{
+        centerLocation = isHoveredOn ? "" : "h-full justify-center"
+        margin = isHoveredOn ? "mt-10":""
+    }
 
 </script>
 
-<div class="w-full h-full flex flex-col items-center {centerLocation} ">
-    <h1 class="text-6xl lg:text-9xl text-{textColor} font-capriola ">
+<div class="w-full flex flex-col items-center {centerLocation} ">
+    <h1 class="text-6xl lg:text-9xl text-{textColor} font-capriola {margin} ">
         {headerText}
     </h1>
     {#if isHoveredOn}

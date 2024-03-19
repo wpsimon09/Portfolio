@@ -1,13 +1,13 @@
 <script>
 </script>
 
-<section class="flex flex-col items-center bg-black bg-opacity-5 p-2 relative backdrop-blur-sm">
+<section class="flex flex-col w-full items-center bg-black bg-opacity-5 p-2 relative backdrop-blur-sm">
         <h1
-                class="text-9xl text-slate-100 font-capriola font-bold drop-shadow-2xl"
+                class="text-5xl lg:text-9xl text-slate-100 font-capriola font-bold drop-shadow-2xl"
         >
                 WELCOME
         </h1>
-        <p class="text-slate-100 font-capriola font-bold drop-shadow-2xl text-lg">My name is Simon, the software developer</p>
+        <p class="text-slate-100 font-capriola drop-shadow-2xl text-sm lg:text-lg">My name is Simon, the software developer</p>
         <div class="flex items-center self-center scale-50">
                 <a href="https://github.com/wpsimon09">
                         <svg
