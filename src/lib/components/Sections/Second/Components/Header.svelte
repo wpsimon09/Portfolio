@@ -1,4 +1,7 @@
 <script>
+    import AboutMe from "./AboutMe.svelte";
+    import {fade} from 'svelte/transition'
+    import { blur } from 'svelte/transition';
     export let headerText;
     export let isHoveredOn;
 
@@ -12,18 +15,22 @@
     let centerLocation;
     let margin;
     $:{
-        centerLocation = isHoveredOn ? "" : "h-full justify-center"
-        margin = isHoveredOn ? "mt-10":""
+        centerLocation = isHoveredOn ? "" : "justify-center"
+        margin = isHoveredOn ? "mt-20":""
     }
+
 
 </script>
 
-<div class="w-full flex flex-col items-center {centerLocation} ">
-    <h1 class="text-6xl lg:text-9xl text-{textColor} font-capriola {margin} ">
+<div class="w-full flex h-full flex-col items-center justify-center">
+    <h1 class="text-6xl lg:text-9xl text-{textColor} font-capriola lg:mt-20 mt-2  ">
         {headerText}
     </h1>
-    {#if isHoveredOn}
-        <p>is between 5 and 10</p>
+    {#if isHoveredOn && headerText == "About me"}
+    <dvi transition:fade={{ delay: 20, duration: 100 }} class="flex flex-col items-center">
+        <AboutMe/>
+    </dvi>
     {:else}
+    
     {/if}
 </div>
