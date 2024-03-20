@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        capriola: ["Capriola"]
+        capriola: ["Capriola"],
+        julius: ["Julius Sans One"]
+        
       }
     },
   },

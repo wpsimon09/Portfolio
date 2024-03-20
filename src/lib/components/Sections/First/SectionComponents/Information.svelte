@@ -3,7 +3,7 @@
 
 <section class="flex flex-col w-full items-center bg-black bg-opacity-5 p-2 relative backdrop-blur-sm">
         <h1
-                class="text-5xl lg:text-9xl text-slate-100 font-capriola font-bold drop-shadow-2xl"
+                class="text-5xl lg:text-9xl text-slate-100 font-julius font-bold drop-shadow-2xl"
         >
                 WELCOME
         </h1>
