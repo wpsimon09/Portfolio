@@ -2,28 +2,38 @@
    
     let hobbies = [{
         "name": "Playing guitar",
-        "icon":""
+        "icon":"/guitar.png"
     }, 
     {
         "name":"Programming",
-        "icon": ""
+        "icon": "/coding.png"
     }, 
     {
         "name":"Rendering",
-        "icon": ""
+        "icon": "/rendering.png"
     },
     {
         "name":"Reading",
-        "icons":""
+        "icons":"/reading.png"
     },
     {
         "name":"Gaming",
-        "icons":""
+        "icons":"/gaming.png"
     },
     {
-        "name":"Guitar playing",
-        "icons":""
+        "name":"Driving",
+        "icons":"/driving.png"
+    },
+    {
+        "name":"Metal music",
+        "icons":"/metal.png"
+    },
+    {
+        "name":"Game engines",
+        "icons":"/game-engine.png"
     }
+
+
 
     
 ];
@@ -38,8 +48,8 @@ $:{
 <div class="relative w-full flex flex-col items-center h-full main rotate-[{rotation}deg]">
     {#each hobbies as hobby, i}
     
-    <div class="text-slate-800 w-20 h-20 circle absolute flex flex-col items-center bg-white rounded-full">
-        {i}
+    <div class="text-slate-100   w-20 h-20 circle absolute flex flex-col items-centerrounded-full">
+        <img class="w-full h-full " src="{hobby.icon}" alt="hobbypng"/>
     </div>
     {/each}
 </div>
@@ -53,26 +63,33 @@ $:{
 }
 
 .circle:nth-child(1) {
-    transform:rotate(60deg) translateX(250px);
+    transform:rotate(45deg) translateX(250px);
 }
 
 .circle:nth-child(2) {
-    transform: rotate(120deg) translateX(250px);
+    transform: rotate(90deg) translateX(250px);
 }
 
 .circle:nth-child(3) {
-    transform: rotate(180deg) translateX(250px);
+    transform: rotate(135deg) translateX(250px);
 }
 
 .circle:nth-child(4) {
-    transform: rotate(240deg) translateX(250px);
+    transform: rotate(180deg) translateX(250px);
 }
 
 .circle:nth-child(5) {
-    transform: rotate(300deg) translateX(250px);
+    transform: rotate(225deg) translateX(250px);
 }
 
 .circle:nth-child(6) {
+    transform: rotate(270deg) translateX(250px);
+}
+
+.circle:nth-child(7) {
+    transform: rotate(315deg) translateX(250px);
+}
+.circle:nth-child(8) {
     transform: rotate(360deg) translateX(250px);
 }
 </style>
