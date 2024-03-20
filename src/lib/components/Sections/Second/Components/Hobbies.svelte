@@ -45,13 +45,18 @@ $:{
     
 </script>
 
-<div class="relative w-full flex flex-col items-center h-full main rotate-[{rotation}deg]">
+<div class="relative w-full flex flex-col justify-center items-center h-full main rotate-[{rotation}deg]">
     {#each hobbies as hobby, i}
     
     <div class="text-slate-100   w-20 h-20 circle absolute flex flex-col items-centerrounded-full">
-        <img class="w-full h-full " src="{hobby.icon}" alt="hobbypng"/>
+        <div class="rotate-0 flex flex-col items-center">
+            <img class="w-full h-full " src="{hobby.icon}" alt="hobbypng"/>
+        </div>
     </div>
     {/each}
+    <h1 class="text-slate-200 absolute "> 
+        Hobby name
+    </h1>
 </div>
 
 <style>
