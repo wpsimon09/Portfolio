@@ -55,7 +55,6 @@ gltfLoader.load('models/savana2.glb', (gltf) => {
 function animate(){
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
-     // 3. update controls with a small step value to "power its engines"
     controls.update(0.01)
 }
 animate();  

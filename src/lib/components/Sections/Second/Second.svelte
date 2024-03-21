@@ -7,6 +7,6 @@
         <SectionHalf bgcolor="slate-100" header="About me"/>
     </div>
     <div class="w-full h-1/2 lg:w-1/2 lg:hover:h-full hover:h-[95%] lg:hover:w-[90%] lg:h-full duration-150">
-        <SectionHalf bgcolor="black" header="Hobbies"/>
+        <SectionHalf bgcolor="slate-900" header="Hobbies"/>
     </div>
 </section>
