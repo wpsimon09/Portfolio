@@ -37,30 +37,25 @@
 
     let hobbySelected = "hello";
 
-    function onHover(hobby){
-        console.log(hobby)
-        if(hobby != undefined){
-            hobbySelected = hobby.name;
-        }
-        else{
+    function onHover(hobbyIndex){
+        if (hobbyIndex >= 0 && hobbyIndex < hobbies.length) {
+            hobbySelected = hobbies[hobbyIndex].name;
+        } else {
             hobbySelected = "";
         }
     }
 
 </script>
 
-<div class="flex flex-col items-center h-full justify-center w-full">
-    <div class="relative flex flex-col justify-center mr-20 items-center h-full main ">
+<div class="flex flex-col items-center h-full justify-center realtive w-full z-50">
+    <div  class="relative flex flex-col justify-center mr-20 items-center h-full main">
         {#each hobbies as hobby, i}
-        
-        <div on:mouseenter={onHover(hobby)} on:mouseleave={onHover(undefined)} class=" w-28 h-28 circle absolute flex flex-col items-center bg-slate-200 shadow-2xl rounded-full">
-            <div class="rotate-0 w-full h-full flex flex-col justify-center items-center">
-                <img class="w-20 h-20" src="{hobby.icon}" alt="hobbypng"/>
-            </div>
+        <div on:mouseenter={()=>onHover(i)} on:mouseleave={()=>onHover(10)}  class=" p-5 hover:p-[3px] duration-100 circle absolute flex flex-col items-center bg-slate-200 shadow-2xl w-32 h-32 rounded-full">
+            <img class="w-full h-full relative" src="{hobby.icon}" alt="hobbypng"/>
         </div>
         {/each}
     </div>
-    <h1 class="text-slate-100 text-3xl text-center absolute "> 
+    <h1 class="text-black text-3xl text-center absolute w-full  "> 
         {hobbySelected}
     </h1>
 </div>

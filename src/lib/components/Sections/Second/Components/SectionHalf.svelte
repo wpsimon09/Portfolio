@@ -16,7 +16,7 @@
 </script>
 
 <!-- svelte-ignore a11y-mouse-events-have-key-events -->
-<div class="w-full h-full bg-{bgcolor}" on:mouseover={mouseOn} on:mouseout={mouseOff} >
+<div class="w-full h-full bg-{bgcolor}" on:mouseover={()=>{mouseOn()}} on:mouseout={()=>{mouseOff()}} >
     <Header isHoveredOn={isHovered} headerText={header}/>
 </div>
 
