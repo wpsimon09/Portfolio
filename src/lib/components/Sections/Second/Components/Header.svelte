@@ -25,11 +25,11 @@
         {headerText}
     </h1>
     {#if isHoveredOn && headerText == "About me"}
-        <div transition:scale={{ duration: 400, delay: 10, opacity: 0.0, start: 0.5, easing: quintOut }} class="flex flex-col w-full h-full items-center">
+        <div transition:scale={{ duration: 400, delay: 10, opacity: 0.0, start: 0.2 , easing: quintOut }} class="flex flex-col w-full h-full items-center">
             <AboutMe/>
         </div>
     {:else if isHoveredOn && headerText == "Hobbies"}
-        <div transition:scale={{ duration: 400, delay: 10, opacity: 0.0, start: 0.5, easing: quintOut }} class="flex flex-col items-center w-full h-full">
+        <div transition:scale={{ duration: 400, delay: 10, opacity: 0.0, start: 0.2, easing: quintOut }} class="flex flex-col w-full h-full items-center">
             <Hobbies/>
         </div>
     {/if}
