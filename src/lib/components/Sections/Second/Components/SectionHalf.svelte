@@ -7,10 +7,12 @@
     let isHovered
 
     function mouseOn(){
+        console.log("hovered on main section");
         isHovered = true;
     }
 
     function mouseOff(){
+        console.log("hovered out of main section");
         isHovered = false;
     }
 </script>

@@ -106,7 +106,9 @@
 
             function animate() {
                 requestAnimationFrame(animate);
-                mixer.update(clock.getDelta());
+                if(mixer != undefined){
+                    mixer.update(clock.getDelta());
+                }
                 renderer.render(scene, camera);
                 controls.update(0.01);
             }

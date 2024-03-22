@@ -1,0 +1,33 @@
+[
+    {
+      "title": "Class bank found manager",
+      "description": "High school graduation project where I had to develop application that would help keep track of the money in the class found",
+      "tech_stack": ["C#, UWP, XAML"]
+    },
+    {
+      "title": "Curious village",
+      "description": "Educational game to teach children to never share their private information to the strangers on the internet, the game won 1st place in our class",
+      "tech_stack": ["TypeScript, OOP, Canvas"]
+    },
+    {
+      "title": "Ligplatsen zeeland",
+      "description": "Web application where peple can browse and rent parking spaces for their boats",
+      "tech_stack": ["Laravel, JavaScript, PHP, MySQL, SSH, Authentification"]
+    },
+    {
+      "title": "Pablo rendering engine",
+      "description": "Personal passion project where I build rendering engine and OpenGL frame work from skratch. Rendering engine supports features such as Physics based rendering, Image Base lighting,Model loading etc...",
+      "tech_stack": ["C++, GLSL, Cmake, OpenGL, OOP"]
+    },
+    {
+      "title": "Hangout safari",
+      "description": "Web application that is supposed to help students socialize and overcome social anxiety. The motivating factor behind socializing is in 3D interctive safari wher you can collect animals based on the number of social events that you have attended",
+      "tech_stack": ["Three.js, SvelteKit, Microservices,Supabase, Docker"]
+    },
+    {
+      "title": "Screen saver for giant screen ",
+      "description": "Joint research center Zeeland is owner of one of the biggest screens in the Netherlands. During hackathon we were given assigment to display something cool on it while it is not used. Our solution was to create glowing sphere that would expand based on the clapping sound of your hands and display different institutions together with their animated models ",
+      "tech_stack": ["Unity, Blender, C#"]
+    }
+  ]
+  

@@ -35,29 +35,21 @@
         "icon":"/game-engine.png"
     }];
 
-    let hobbySelected = "hello";
-
-    function onHover(hobbyIndex){
-        if (hobbyIndex >= 0 && hobbyIndex < hobbies.length) {
-            hobbySelected = hobbies[hobbyIndex].name;
-        } else {
-            hobbySelected = "";
-        }
-    }
 
 </script>
 
 <div class="flex flex-col items-center h-full justify-center realtive z-50">
     <div  class="relative flex flex-col justify-center mr-20 items-center h-full main">
-        {#each hobbies as hobby, i}
-        <div on:mouseenter={()=>onHover(i)} on:mouseleave={()=>onHover(10)}  class="p-5 hover:p-[3px] duration-100 circle absolute flex flex-col items-center bg-slate-200 shadow-2xl w-32 h-32 rounded-full">
-            <img class="w-full h-full" src="{hobby.icon}" alt="hobbypng"/>
-        </div>
+        {#each hobbies as hobby}
+            <div class=" absolute duration-100 circle  flex flex-col items-center bg-slate-600 shadow-2xl w-32 h-32  rounded-full justify-center">
+                <dvi class="">
+                    <img class="w-16 h-16" src="{hobby.icon}" alt="hobbypng"/>
+                </dvi>
+                <p class="text-slate-200">{hobby.name}</p>
+            </div>
         {/each}
     </div>
-    <h1 class="text-white text-3xl text-center absolute w-full"> 
-        {hobbySelected}
-    </h1>
+ 
 </div>
 
 <style>
