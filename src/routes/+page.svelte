@@ -1,5 +1,6 @@
 <script>
 	import FirstSection from "$lib/components/Sections/First/FirstSection.svelte";
+    import Footer from "$lib/components/Sections/Footer/Footer.svelte";
 	import SecondSection from "$lib/components/Sections/Second/Second.svelte"
 	import Third from "$lib/components/Sections/Third/Third.svelte";
     let y = 20;
@@ -23,6 +24,9 @@
         <Third y={y}/>
     </section>
     
+    <section class="w-full">
+        <Footer/>
+    </section>
 </div>
 
 
