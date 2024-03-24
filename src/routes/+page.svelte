@@ -1,17 +1,21 @@
 <script>
-	import FirstSection from "$lib/components/Sections/First/FirstSection.svelte";
+    import { slide } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
+
+    import FirstSection from "$lib/components/Sections/First/FirstSection.svelte";
     import Footer from "$lib/components/Sections/Footer/Footer.svelte";
 	import SecondSection from "$lib/components/Sections/Second/Second.svelte"
 	import Third from "$lib/components/Sections/Third/Third.svelte";
+
     let y = 20;
     console.log(y);
+
+    let creditsVisible = false;
 </script>
 
 
-<div class="fixed bg-black p-10 text-white">
-    {y}
-</div>
-<div on:scroll={(event)=>{y = event.currentTarget.scrollTop}} class=" h-full flex-col items-center overflow-auto ">
+<div on:scroll={(event)=>{y = event.currentTarget.scrollTop}} class=" h-full flex-col items-center snap-y overflow-auto relative ">
+
     <section class="w-full h-full flex flex-col items-center snap-center">
         <FirstSection/>
     </section> 
@@ -20,13 +24,22 @@
         <SecondSection/>
     </section> 
     
-    <section class="w-full  flex flex-col items-center snap-none ">
+    <section class="w-full  flex flex-col items-center snap-start">
         <Third y={y}/>
+        
     </section>
     
-    <section class="w-full">
-        <Footer/>
+    <section class="w-full  flex flex-col items-center">
+        <Footer on:click={()=>creditsVisible ? creditsVisible = false : creditsVisible = true}/>
+            {#if creditsVisible}
+                <div transition:slide={{ delay: 20, duration: 300, easing: quintOut, axis: 'y' }} class = "flex flex-col items-center  justify-center w-40 h-20 absolute backdrop:blur-2xl">
+                    <a href="https://sketchfab.com/CapAlatriste" class="underline text-white"> 3D model </a>
+                    <a href="https://www.flaticon.com/" class="underline text-white"> Icons </a>
+                     
+                </div>
+            {/if}
     </section>
+
 </div>
 
 

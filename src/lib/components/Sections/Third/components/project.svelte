@@ -1,8 +1,6 @@
 <script>
     import { scale } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
-    import { slide } from 'svelte/transition';
-    import { blur } from 'svelte/transition';
     
     export let showTrashHold;
     export let y;
@@ -14,7 +12,7 @@
 
 {#if showTrashHold < y}
     
-<section transition:scale={{ duration: 400, delay: 0, opacity: 0.0, start: 0.2 , easing: quintOut }} class="{position ? "flex-row -ml-10": "-mr-10 flex-row-reverse"} flex items-center z-50 ">
+<section transition:scale={{ duration: 400, delay: 0, opacity: 0.0, start: 0.2, end: 0.0, easing: quintOut }} class="{position ? "flex-row -ml-10": "-mr-10 flex-row-reverse"} flex items-center z-50 ">
     <div class="flex flex-row items-center  w-full gap-2 {position ? "flex-row": "flex-row-reverse"}">
         <div class="w-20 h-20 scale-[0.4] rounded-full bg-slate-100">
             
