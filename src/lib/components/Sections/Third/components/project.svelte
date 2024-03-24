@@ -1,6 +1,8 @@
 <script>
     import { scale } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+    import {createEventDispatcher} from 'svelte';
+
     
     export let showTrashHold;
     export let y;
@@ -8,6 +10,9 @@
     export let title
     export let description
     export let position;
+
+    const onProjectShow = createEventDispatcher();
+
 </script>
 
 {#if showTrashHold < y}
@@ -18,14 +23,19 @@
             
         </div>
         <div class="flex flex-col w-1/2  items-center">
-            <h2 class="text-2xl font-bold  text-slate-100 self-startc  font-julius">{title}</h2>
+            <h2 class="text-2xl font-bold text-center text-slate-100 self-startc  font-julius">{title}</h2>
             <div class="w-40 my-2 h-0.5 bg-slate-200">
                 
             </div>
             <div class="mt-2 w-full">
                 <p class="text-slate-100  w-full text-center">{description}</p>
             </div>
-            <button class="text-white underline mt-2 mb-2">READ MORE</button>
+            <button on:click={()=>{
+                onProjectShow('onProjectShow',{
+                    p_title: title,
+                    p_description: description, 
+                })
+            }} class="text-white underline mt-2 mb-2 {position? "hover:rotate-6": "hover:-rotate-6"} duration-200 ">READ MORE</button>
         </div>
     </div>
 </section>

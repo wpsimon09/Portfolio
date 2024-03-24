@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex flex-col w-screen h-screen bg-zinc-900">
-	<main class="w-full h-full ">
+	<main class="w-full h-full relative">
 		<slot />
 	</main>
 

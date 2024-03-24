@@ -6,16 +6,36 @@
     import Footer from "$lib/components/Sections/Footer/Footer.svelte";
 	import SecondSection from "$lib/components/Sections/Second/Second.svelte"
 	import Third from "$lib/components/Sections/Third/Third.svelte";
+    import ProjectShow from '$lib/components/Sections/Second/Components/ProjectShow.svelte';
 
     let y = 20;
     console.log(y);
 
     let creditsVisible = false;
+
+    let isProjectVisible = false;
+
+    let visibleProjectInofo = {
+        title:"",
+        description:"",
+
+    }
+
+    function handleProjectShowEvent(e){
+        console.log(e.details)
+        visibleProjectInofo.title = e.detail.p_title;
+        visibleProjectInofo.description = e.detail.p_description;
+        isProjectVisible = true;
+    }
 </script>
 
 
 <div on:scroll={(event)=>{y = event.currentTarget.scrollTop}} class=" h-full flex-col items-center snap-y overflow-auto relative ">
 
+    {#if isProjectVisible}
+        <ProjectShow on:click={()=>{isProjectVisible = false}} p_description = {visibleProjectInofo.description} p_title={visibleProjectInofo.title} />
+    {/if}
+  
     <section class="w-full h-full flex flex-col items-center snap-center">
         <FirstSection/>
     </section> 
@@ -25,7 +45,7 @@
     </section> 
     
     <section class="w-full  flex flex-col items-center snap-start">
-        <Third y={y}/>
+        <Third on:onProjectShow={handleProjectShowEvent} y={y}/>
         
     </section>
     

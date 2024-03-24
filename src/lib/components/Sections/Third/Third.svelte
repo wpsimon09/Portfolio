@@ -29,6 +29,7 @@
                     position={i % 2 == 0}   
                     title={project.title}
                     description={project.description}
+                    on:onProjectShow
                     />
                 </div>
         </div>
