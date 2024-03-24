@@ -1,33 +1,32 @@
 [
-    {
-      "title": "Class bank found manager",
-      "description": "High school graduation project where I had to develop application that would help keep track of the money in the class found",
-      "tech_stack": ["C#, UWP, XAML"]
-    },
-    {
-      "title": "Curious village",
-      "description": "Educational game to teach children to never share their private information to the strangers on the internet, the game won 1st place in our class",
-      "tech_stack": ["TypeScript, OOP, Canvas"]
-    },
-    {
-      "title": "Ligplatsen zeeland",
-      "description": "Web application where peple can browse and rent parking spaces for their boats",
-      "tech_stack": ["Laravel, JavaScript, PHP, MySQL, SSH, Authentification"]
-    },
-    {
-      "title": "Pablo rendering engine",
-      "description": "Personal passion project where I build rendering engine and OpenGL frame work from skratch. Rendering engine supports features such as Physics based rendering, Image Base lighting,Model loading etc...",
-      "tech_stack": ["C++, GLSL, Cmake, OpenGL, OOP"]
-    },
-    {
-      "title": "Hangout safari",
-      "description": "Web application that is supposed to help students socialize and overcome social anxiety. The motivating factor behind socializing is in 3D interctive safari wher you can collect animals based on the number of social events that you have attended",
-      "tech_stack": ["Three.js, SvelteKit, Microservices,Supabase, Docker"]
-    },
-    {
-      "title": "Screen saver for giant screen ",
-      "description": "Joint research center Zeeland is owner of one of the biggest screens in the Netherlands. During hackathon we were given assigment to display something cool on it while it is not used. Our solution was to create glowing sphere that would expand based on the clapping sound of your hands and display different institutions together with their animated models ",
-      "tech_stack": ["Unity, Blender, C#"]
-    }
-  ]
-  
+  {
+    "title": "Class Bank Fund Manager",
+    "description": "Developed an application for managing class funds during high school. It helped keep track of money and expenses easily. Used C#, UWP, and XAML.",
+    "tech_stack": ["C#", "UWP", "XAML"]
+  },
+  {
+    "title": "Curious Village",
+    "description": "Created an educational game to teach children about internet safety. It won first place in class. The game helps kids learn not to share personal information online. Developed using TypeScript, OOP, and Canvas.",
+    "tech_stack": ["TypeScript", "OOP", "Canvas"]
+  },
+  {
+    "title": "Ligplatsen Zeeland",
+    "description": "Built a web application where people can browse and rent parking spaces for their boats. Used technologies like Laravel, JavaScript, PHP, MySQL, SSH, and authentication.",
+    "tech_stack": ["Laravel", "JavaScript", "PHP", "MySQL", "SSH", "Authentification"]
+  },
+  {
+    "title": "Pablo Rendering Engine",
+    "description": "A personal project where I developed a rendering engine and OpenGL framework from scratch. The engine supports features like physics-based rendering, image-based lighting, and model loading. Implemented in C++, GLSL, CMake, and OpenGL.",
+    "tech_stack": ["C++", "GLSL", "Cmake", "OpenGL", "OOP"]
+  },
+  {
+    "title": "Hangout Safari",
+    "description": "Designed a web application to help students socialize and overcome social anxiety. It features a 3D interactive safari where you collect animals based on the number of social events attended. Built with Three.js, SvelteKit, microservices, Supabase, and Docker.",
+    "tech_stack": ["Three.js", "SvelteKit", "Microservices", "Supabase", "Docker"]
+  },
+  {
+    "title": "Screen Saver for Giant Screen",
+    "description": "During a hackathon for the Joint Research Center Zeeland, we created a screen saver for one of the biggest screens in the Netherlands. It displayed a glowing sphere that expanded based on clapping sounds. Also showed animated models of different institutions. Developed using Unity, Blender, and C#.",
+    "tech_stack": ["Unity", "Blender", "C#"]
+  }
+]

@@ -19,10 +19,12 @@
         <SecondSection/>
     </section> 
     
-    <section class="w-full h-full flex flex-col items-center snap-none ">
+    <section class="w-full  flex flex-col items-center snap-none ">
         <Third y={y}/>
     </section>
+    
 </div>
+
 
 	
 

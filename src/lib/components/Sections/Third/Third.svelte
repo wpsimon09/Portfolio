@@ -6,7 +6,7 @@
     let trasholds = []
 
     for(let i = 0; i< projects.length; i++){
-        trasholds.push(1140 + (230 * i))
+        trasholds.push(1140 + (250 * i))
     }
 
     console.log(trasholds);
@@ -14,7 +14,7 @@
 </script>
 
 
-<section class="w-ful relative items-center flex flex-col">
+<section class="w-full h-full relative items-center flex flex-col">
     <h1 class="text-2xl text-white"> {y} </h1>
     <div class="h-full w-full bg-zinc-900 relative items-center flex flex-col gap-20">
         <div class="w-2 h-2 rounded-full bg-slate-50 z-10"></div>
