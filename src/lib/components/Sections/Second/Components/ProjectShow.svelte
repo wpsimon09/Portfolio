@@ -31,13 +31,13 @@
                         alt="project image "
                     />
                 </div>
-                <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row gap-10 items-center justify-between">
                     <a href={project.link}>
-                        <img class="w-10 h-10" alt="github" src="gh-w.png"/>
+                        <img class="w-10 h-10 hover:scale-125 duration-150" alt="github" src="gh-w.png"/>
                     </a>
                     {#if project.link_deployement != ""}    
                     <a href={project.link_deployement}>
-                        <img class="w-10 h-10" alt ="link" src=""/>
+                        <img class="w-10 h-10 hover:scale-125 duration-150" alt ="link" src="link.png"/>
                     </a>
                     {/if}
                 </div>
