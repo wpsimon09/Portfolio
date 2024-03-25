@@ -15,7 +15,7 @@
 
 
 <section class="w-full h-full relative items-center flex flex-col my-10">
-    <h1 class="text-2xl text-white"> {y} </h1>
+    <h1 class="text-4xl mb-10 text-white"> My projects </h1>
     <div class="h-full w-full bg-zinc-900 relative items-center flex flex-col gap-20">
         <div class="w-2 h-2 rounded-full bg-slate-50 z-10"></div>
         <div class="bg-slate-50 w-0.5 h-full absolute z-30"></div>
@@ -27,8 +27,7 @@
                     showTrashHold = {trasholds[i]}
                     y = {y}
                     position={i % 2 == 0}   
-                    title={project.title}
-                    description={project.description}
+                    project = {project}
                     on:onProjectShow
                     />
                 </div>

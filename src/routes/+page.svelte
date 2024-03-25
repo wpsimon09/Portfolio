@@ -18,13 +18,13 @@
     let visibleProjectInofo = {
         title:"",
         description:"",
+        }
 
-    }
+    export let selectedProject = {}
 
     function handleProjectShowEvent(e){
         console.log(e.details)
-        visibleProjectInofo.title = e.detail.p_title;
-        visibleProjectInofo.description = e.detail.p_description;
+        selectedProject = e.detail.passed_project;
         isProjectVisible = true;
     }
 </script>
@@ -33,7 +33,7 @@
 <div on:scroll={(event)=>{y = event.currentTarget.scrollTop}} class=" h-full flex-col items-center snap-y overflow-auto relative ">
 
     {#if isProjectVisible}
-        <ProjectShow on:click={()=>{isProjectVisible = false}} p_description = {visibleProjectInofo.description} p_title={visibleProjectInofo.title} />
+        <ProjectShow on:click={()=>{isProjectVisible = false}} project = {selectedProject} />
     {/if}
   
     <section class="w-full h-full flex flex-col items-center snap-center">
@@ -55,10 +55,9 @@
                 <div transition:slide={{ delay: 20, duration: 300, easing: quintOut, axis: 'y' }} class = "flex flex-col items-center  justify-center w-40 h-20 absolute backdrop:blur-2xl">
                     <a href="https://sketchfab.com/CapAlatriste" class="underline text-white"> 3D model </a>
                     <a href="https://www.flaticon.com/" class="underline text-white"> Icons </a>
-                     
                 </div>
             {/if}
-    </section>
+    </section>  
 
 </div>
 
