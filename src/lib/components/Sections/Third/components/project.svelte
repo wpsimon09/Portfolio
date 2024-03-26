@@ -26,8 +26,8 @@
             <div class="w-40 my-2 h-0.5 bg-slate-200">
                 
             </div>
-            <div class="mt-2 w-full">
-                <p class="text-slate-100  w-full text-center">{project.description}</p>
+            <div class="mt-2 w-full hidden lg:flex">
+                <p class="text-slate-100   w-full text-center">{project.description}</p>
             </div>
             <button on:click={()=>{
                 onProjectShow('onProjectShow',{

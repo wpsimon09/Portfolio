@@ -1,18 +1,11 @@
 <script>
 </script>
 
-<div class="lg:w-[70%] h-full p-10 flex flex-col items-center z-50">
-    <div class="bg-slate-100 p-2 rounded-full h-32 w-32 lg:w-64 lg:h-64 shadow-2xl">
-        <img alt="me" class="rounded-full w-full h-full" src="/me.jpg"/>
+<div class="lg:w-full h-full flex flex-col items-center z-50">
+    <div class=" w-1/3 shadow-2xl">
+        <img alt="me" class="w-full h-full" src="/me.jpg"/>
     </div> 
-    <p class="text-slate-100 bg-slate-700  mt-2 shadow-2xl text-md lg:text-2xl p-10 w-full rounded-lg ">
-        As you might have red my name is Simon I am second year ICT sudent in the Netherlands.
-        <br>
-        I study at HZ university of applied sciences and my focus lies within software engeneering
-        <br>
-        I come from Slovakia from smaller town called Presov
-        <br>
-        I like playing electric guitar and reading books about computer graphics
-        <br>    
+    <p class="text-slate-100   mt-2 shadow-2xl text-md lg:text-2xl p-10 w-full rounded-lg ">
+        My name is Simon, and I'm a second-year ICT student at HZ University of Applied Sciences in the Netherlands. My focus is on software engineering. I originally come from Presov, a smaller town in Slovakia. I enjoy playing electric guitar and reading books about computer graphics.
     </p>
 </div>

@@ -49,7 +49,7 @@
         
     </section>
     
-    <section class="w-full  flex flex-col items-center">
+    <section class="w-full  flex flex-col items-center snap-start">
         <Footer on:click={()=>creditsVisible ? creditsVisible = false : creditsVisible = true}/>
             {#if creditsVisible}
                 <div transition:slide={{ delay: 20, duration: 300, easing: quintOut, axis: 'y' }} class = "flex flex-col items-center  justify-center w-40 h-20 absolute backdrop:blur-2xl">
