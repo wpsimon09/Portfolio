@@ -1,7 +1,7 @@
 [
   {
     "title": "Class Bank Fund Manager",
-    "description": "Developed an application for managing class funds during high school. It helped keep track of money and expenses easily. Used C#, UWP, and XAML.",
+    "description": "Developed an application for managing class funds during high school. It helped keep track of money and expenses easily.",
     "tech_stack": ["C#", "UWP", "XAML"],
     "link": "https://github.com/wpsimon09/RocnikovyProjekt-SPSE-BANK",
     "link_deployement": "",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Curious Village",
-    "description": "Created an educational game to teach children about internet safety. It won first place in class. The game helps kids learn not to share personal information online. Developed using TypeScript, OOP, and Canvas.",
+    "description": "Created an educational game to teach children about internet safety. It won first place in class. The game helps kids learn not to share personal information online.",
     "tech_stack": ["TypeScript", "OOP", "Canvas"],
     "link": "https://github.com/HZ-2223/oop-team22",
     "link_deployement":"https://hz-2223.github.io/oop-team22/",
@@ -18,7 +18,7 @@
   },
   {
     "title": "Ligplatsen Zeeland",
-    "description": "Built a web application where people can browse and rent parking spaces for their boats. Used technologies like Laravel, JavaScript, PHP, MySQL, SSH, and authentication.",
+    "description": "Built a web application where people can browse and rent parking spaces for their boats.",
     "tech_stack": ["Laravel", "JavaScript", "PHP", "MySQL", "SSH", "Authentification"],
     "link": "",
     "link_deployement":"https://ligplaatsenzeeland.nl/" ,
@@ -26,7 +26,7 @@
   },
   {
     "title": "Pablo Rendering Engine",
-    "description": "A personal project where I developed a rendering engine and OpenGL framework from scratch. The engine supports features like physics-based rendering, image-based lighting, and model loading. Implemented in C++, GLSL, CMake, and OpenGL.",
+    "description": "A personal project where I developed a rendering engine and OpenGL framework from scratch. The engine supports features like physics-based rendering, image-based lighting, and model loading.",
     "tech_stack": ["C++", "GLSL", "Cmake", "OpenGL", "OOP"],
     "link": "https://github.com/wpsimon09/Pablo-Renderer",
     "link_deployement":""  ,
@@ -34,7 +34,7 @@
   },
   {
     "title": "Hangout Safari",
-    "description": "Designed a web application to help students socialize and overcome social anxiety. It features a 3D interactive safari where you collect animals based on the number of social events attended. Built with Three.js, SvelteKit, microservices, Supabase, and Docker.",
+    "description": "Designed a web application to help students socialize and overcome social anxiety. It features a 3D interactive safari where you collect animals based on the number of social events attended.",
     "tech_stack": ["Three.js", "SvelteKit", "Microservices", "Supabase", "Docker"],
     "link": "https://github.com/HangoutSafari/Hangout-Safari",
     "link_deployement":"",
@@ -42,11 +42,10 @@
   },
   {
     "title": "Screen Saver for Giant Screen",
-    "description": "During a hackathon for the Joint Research Center Zeeland, we created a screen saver for one of the biggest screens in the Netherlands. It displayed a glowing sphere that expanded based on clapping sounds. Also showed animated models of different institutions. Developed using Unity, Blender, and C#.",
+    "description": "During a hackathon for the Joint Research Center Zeeland, we created a screen saver for one of the biggest screens in the Netherlands. It displayed a glowing sphere that expanded based on clapping sounds. Also showed animated models of different institutions.",
     "tech_stack": ["Unity", "Blender", "C#"],
     "link":"https://cloud.unity.com/home/organizations/9071844740585/projects/e2c9e37c-376f-4454-aecf-747574321550/details?tab=services",
     "link_deployement" : "",
     "image" : ["projects/spse-bank.png"]
-
   }
 ]

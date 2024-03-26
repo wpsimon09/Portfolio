@@ -27,7 +27,7 @@
                 
             </div>
             <div class="mt-2 w-full hidden lg:flex">
-                <p class="text-slate-100   w-full text-center">{project.description}</p>
+                <p class="text-slate-100 w-full text-center">{project.description}</p>
             </div>
             <button on:click={()=>{
                 onProjectShow('onProjectShow',{

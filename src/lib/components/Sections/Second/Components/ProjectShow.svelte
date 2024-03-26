@@ -14,22 +14,33 @@
         class="w-full lg:w-1/2 flex flex-col border border-white items-center bg-zinc-800 border-1-white rounded-xl z-[99]"
     >
         <h1
-            class="text-slate-100 w-full text-center text-3xl font-julius mt-10"
+            class="text-slate-100 w-full text-center font-bold text-3xl font-julius mt-10"
         >
             {project.title}
         </h1>
-        <div class="h-0.5 bg-slate-50 w-80 mt-4 font-bold"></div>
-        <dvi class="flex flex-col items-center  w-full h-full">
+        <div class="h-0.5 bg-slate-50 w-80 mt-4"></div>
+        <div class="flex flex-col items-center   w-full h-full">
             <p class="text-white w-2/3">
                 <br />
                 {project.description}
             </p>
+
+            
+
+            <h2 class="text-white text-lg mt-5">Used tech</h2>
+            <div class="border border-slate-100 p-2 rounded-xl h-full flex flex-row items-center">
+                {#each project.tech_stack as used_tech }
+                    <p  class="text-slate-100 italic text-lg ml-2">
+                        {used_tech}, 
+                    </p>
+                {/each}
+            </div>
             <div class="flex flex-col items-center h-full justify-center">
                 <div class="flex flex-col items-center h-[300px] lg:h-[400px] p-10">
                     <img
                         class="w-full h-full rounded-lg"
                         src={project.image}
-                        alt="project image "
+                        alt="projectimage"
                     />
                 </div>
                 <div class="flex flex-row gap-10 items-center justify-between">
@@ -47,6 +58,6 @@
                 class="bg-slate-200 text-zinc-900 p-3 hover:scale-110 duration-300 rounded-2xl my-10"
                 on:click>Got it, cool, anyway</button
             >
-        </dvi>
+        </div>
     </div>
-</div>
+</div>  
