@@ -20,17 +20,17 @@
         </h1>
         <div class="h-0.5 bg-slate-50 w-80 mt-4"></div>
         <div class="flex flex-col items-center   w-full h-full">
-            <p class="text-white w-2/3">
+            <p class="text-white w-2/3 text-xl lg:text-2xl">
                 <br />
                 {project.description}
             </p>
 
             
 
-            <h2 class="text-white text-lg mt-5">Used tech</h2>
-            <div class="border border-slate-100 p-2 rounded-xl h-full flex flex-row items-center">
+            <h2 class="text-white text-lg lg:text-xl font-extrabold mt-5">Used tech</h2>
+            <div class="border border-slate-100 rounded-lg p-1 h-full flex flex-row items-center">
                 {#each project.tech_stack as used_tech }
-                    <p  class="text-slate-100 italic text-lg ml-2">
+                    <p  class="text-slate-100 italic text-md lg:text-lg ml-2">
                         {used_tech}, 
                     </p>
                 {/each}

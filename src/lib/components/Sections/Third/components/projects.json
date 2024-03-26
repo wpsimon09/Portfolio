@@ -47,5 +47,13 @@
     "link":"https://cloud.unity.com/home/organizations/9071844740585/projects/e2c9e37c-376f-4454-aecf-747574321550/details?tab=services",
     "link_deployement" : "",
     "image" : ["projects/spse-bank.png"]
+  },
+  {
+    "title": "Workshop about graphics programming",
+    "description": "During the We are in IT together conference organized by HZ University of applied sciences I had an oppurtunity to teach workshop where participants could learn what it takes to create interactive applications or game engines. The workshop cover basic topics such as rendering pipline, buffers, graphics APIs, shading models and more. Attendance reached maximium ammount of participants and harvested great success.",
+    "tech_stack": ["C++", "GLSL", "OpenGL", "Computer graphics", "Teaching"],
+    "link":"https://github.com/wpsimon09/OpenGL-Workshop",
+    "link_deployement" : "",
+    "image" : ["projects/spse-bank.png"]
   }
 ]
