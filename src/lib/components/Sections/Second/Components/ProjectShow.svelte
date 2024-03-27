@@ -11,7 +11,7 @@
     class=" w-screen h-screen fixed flex flex-col items-center backdrop-blur-xl justify-center bg-opacity-5 z-[98]"
 >
     <div
-        class="w-full lg:w-1/2 flex flex-col border border-white items-center bg-zinc-800 border-1-white rounded-xl z-[99]"
+        class="w-full lg:w-1/2 h-[80%] overflow-y-auto  flex flex-col border border-white items-center bg-zinc-800 border-1-white rounded-xl z-[99]"
     >
         <h1
             class="text-slate-100 w-full text-center font-bold text-3xl font-julius mt-10"
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <button
-                class="bg-slate-200 text-zinc-900 p-3 hover:scale-110 duration-300 rounded-2xl my-10"
+                class="bg-slate-200 text-zinc-900 p-3 hover:scale-110 mb-10 mt-6 duration-300 rounded-2xl "
                 on:click>Got it, cool, anyway</button
             >
         </div>

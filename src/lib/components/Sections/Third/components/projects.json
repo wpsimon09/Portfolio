@@ -50,10 +50,10 @@
   },
   {
     "title": "Workshop about graphics programming",
-    "description": "During the We are in IT together conference organized by HZ University of applied sciences I had an oppurtunity to teach workshop where participants could learn what it takes to create interactive applications or game engines. The workshop cover basic topics such as rendering pipline, buffers, graphics APIs, shading models and more. Attendance reached maximium ammount of participants and harvested great success.",
+    "description": "During the We Are in IT Together conference organized by HZ University of Applied Sciences, I had an opportunity to teach a workshop where participants could learn what it takes to create interactive applications or game engines. The workshop covered basic topics such as rendering pipeline, buffers, graphics APIs, shading models, and more. Attendance reached the maximum amount of participants and harvested great success.    ",
     "tech_stack": ["C++", "GLSL", "OpenGL", "Computer graphics", "Teaching"],
     "link":"https://github.com/wpsimon09/OpenGL-Workshop",
     "link_deployement" : "",
-    "image" : ["projects/spse-bank.png"]
+    "image" : ["projects/workshop.jpg"]
   }
 ]
