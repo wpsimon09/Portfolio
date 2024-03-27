@@ -11,14 +11,14 @@
     class=" w-screen h-screen fixed flex flex-col items-center backdrop-blur-xl justify-center bg-opacity-5 z-[98]"
 >
     <div
-        class="w-full lg:w-1/2 h-[80%] overflow-y-auto  flex flex-col border border-white items-center bg-zinc-800 border-1-white rounded-xl z-[99]"
+        class="w-full  lg:w-1/2 h-[70%] overflow-y-auto p-2 flex flex-col border border-white items-center bg-zinc-800 border-1-white rounded-xl z-[99]"
     >
         <h1
             class="text-slate-100 w-full text-center font-bold text-3xl font-julius mt-10"
         >
             {project.title}
         </h1>
-        <div class="h-0.5 bg-slate-50 w-80 mt-4"></div>
+        <div class="h-0.5 bg-slate-50 w-80 mt-4 text-zinc-800">s</div>
         <div class="flex flex-col items-center   w-full h-full">
             <p class="text-white w-2/3 text-xl lg:text-2xl">
                 <br />
@@ -28,9 +28,9 @@
             
 
             <h2 class="text-white text-lg lg:text-xl font-extrabold mt-5">Used tech</h2>
-            <div class="border border-slate-100 rounded-lg p-1 h-full flex flex-row items-center">
+            <div class="border border-slate-100 rounded-lg p-4 h-52 w-[90%] lg:w-1/2 justify-center overflow-x-auto overflow-y-hidden flex flex-row items-center">
                 {#each project.tech_stack as used_tech }
-                    <p  class="text-slate-100 italic text-md lg:text-lg ml-2">
+                    <p  class="text-slate-100 italic text-md lg:text-lg ml-2 ">
                         {used_tech}, 
                     </p>
                 {/each}
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <button
-                class="bg-slate-200 text-zinc-900 p-3 hover:scale-110 mb-10 mt-6 duration-300 rounded-2xl "
+                class="bg-slate-200  text-zinc-900 p-3 hover:scale-110 mb-10 mt-2 duration-300 rounded-2xl "
                 on:click>Got it, cool, anyway</button
             >
         </div>

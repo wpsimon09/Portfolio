@@ -38,7 +38,7 @@
     "tech_stack": ["Three.js", "SvelteKit", "Microservices", "Supabase", "Docker"],
     "link": "https://github.com/HangoutSafari/Hangout-Safari",
     "link_deployement":"",
-    "image" : ["projects/spse-bank.png"]
+    "image" : ["projects/safari.png"]
   },
   {
     "title": "Screen Saver for Giant Screen",
@@ -46,7 +46,7 @@
     "tech_stack": ["Unity", "Blender", "C#"],
     "link":"https://cloud.unity.com/home/organizations/9071844740585/projects/e2c9e37c-376f-4454-aecf-747574321550/details?tab=services",
     "link_deployement" : "",
-    "image" : ["projects/spse-bank.png"]
+    "image" : ["projects/hack.jpg"]
   },
   {
     "title": "Workshop about graphics programming",
