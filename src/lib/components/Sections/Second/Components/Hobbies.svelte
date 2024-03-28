@@ -4,35 +4,35 @@
    
     let hobbies = [{
         "name": "Playing guitar",
-        "icon":"/guitar.png"
+        "icon":"icons/guitar.png"
     }, 
     {
         "name":"Programming",
-        "icon": "/coding.png"
+        "icon": "icons/coding.png"
     }, 
     {
         "name":"Rendering",
-        "icon": "/rendering.png"
+        "icon": "icons/rendering.png"
     },
     {
         "name":"Reading",
-        "icon":"/reading.png"
+        "icon":"icons/reading.png"
     },
     {
         "name":"Gaming",
-        "icon":"/gaming.png"
+        "icon":"icons/gaming.png"
     },
     {
         "name":"Driving",
-        "icon":"/driving.png"
+        "icon":"icons/driving.png"
     },
     {
         "name":"Metal music",
-        "icon":"/metal.png"
+        "icon":"icons/metal.png"
     },
     {
         "name":"Game engines",
-        "icon":"/game-engine.png"
+        "icon":"icons/game-engine.png"
     }];
 
 
@@ -41,7 +41,7 @@
 <div class="flex flex-col items-center h-full justify-center realtive z-50">
     <div  class="relative flex flex-col justify-center mr-20 items-center h-full main">
         {#each hobbies as hobby}
-            <div class=" absolute duration-100 circle-sm lg:circle flex flex-col items-center bg-zinc-800 shadow-2xl w-32 h-32  rounded-full justify-center">
+            <div class=" absolute duration-100 circle flex flex-col items-center bg-zinc-800 shadow-2xl w-32 h-32  rounded-full justify-center">
                 <dvi class="">
                     <img class="w-16 h-16" src="{hobby.icon}" alt="hobbypng"/>
                 </dvi>

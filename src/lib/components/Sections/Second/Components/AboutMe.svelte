@@ -3,7 +3,7 @@
 
 <div class=" w-full flex flex-col lg:flex-row items-center z-50 ">
     <div class="  w-1/2 scale-90 shadow-2xl">
-        <img alt="me" class="w-full h-full" src="/me.png"/>
+        <img alt="me" class="w-full h-full" src="icons/me.png"/>
     </div> 
     <div class="  w-full lg:w-1/2 mx-6">
         <p class="text-slate-100 bg-zinc-800 mt-2 shadow-2xl text-md lg:text-2xl p-4 lg:p-10 w-full rounded-lg ">
