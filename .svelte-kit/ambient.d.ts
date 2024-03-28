@@ -34,12 +34,10 @@ declare module '$env/static/private' {
 	export const npm_config_userconfig: string;
 	export const COLORTERM: string;
 	export const npm_config_cache: string;
-	export const npm_package_dev_optional: string;
 	export const LESS: string;
 	export const HISTCONTROL: string;
 	export const XDG_MENU_PREFIX: string;
 	export const TERM_PROGRAM_VERSION: string;
-	export const npm_package_integrity: string;
 	export const HOSTNAME: string;
 	export const HISTSIZE: string;
 	export const NODE: string;
@@ -56,7 +54,6 @@ declare module '$env/static/private' {
 	export const XDG_SESSION_DESKTOP: string;
 	export const LOGNAME: string;
 	export const XDG_SESSION_TYPE: string;
-	export const npm_package_dev: string;
 	export const npm_config_init_module: string;
 	export const SYSTEMD_EXEC_PID: string;
 	export const _: string;
@@ -66,7 +63,6 @@ declare module '$env/static/private' {
 	export const GDM_LANG: string;
 	export const HOME: string;
 	export const USERNAME: string;
-	export const npm_package_peer: string;
 	export const LANG: string;
 	export const LS_COLORS: string;
 	export const XDG_CURRENT_DESKTOP: string;
@@ -74,7 +70,6 @@ declare module '$env/static/private' {
 	export const MEMORY_PRESSURE_WATCH: string;
 	export const VTE_VERSION: string;
 	export const WAYLAND_DISPLAY: string;
-	export const npm_package_resolved: string;
 	export const GIT_ASKPASS: string;
 	export const GNOME_TERMINAL_SCREEN: string;
 	export const INIT_CWD: string;
@@ -82,7 +77,6 @@ declare module '$env/static/private' {
 	export const npm_lifecycle_script: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const GNOME_SETUP_DISPLAY: string;
-	export const npm_package_optional: string;
 	export const npm_config_npm_version: string;
 	export const XDG_SESSION_CLASS: string;
 	export const TERM: string;
@@ -119,8 +113,8 @@ declare module '$env/static/private' {
 	export const MAIL: string;
 	export const npm_node_execpath: string;
 	export const OLDPWD: string;
-	export const npm_package_engines_node: string;
 	export const TERM_PROGRAM: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -158,12 +152,10 @@ declare module '$env/dynamic/private' {
 		npm_config_userconfig: string;
 		COLORTERM: string;
 		npm_config_cache: string;
-		npm_package_dev_optional: string;
 		LESS: string;
 		HISTCONTROL: string;
 		XDG_MENU_PREFIX: string;
 		TERM_PROGRAM_VERSION: string;
-		npm_package_integrity: string;
 		HOSTNAME: string;
 		HISTSIZE: string;
 		NODE: string;
@@ -180,7 +172,6 @@ declare module '$env/dynamic/private' {
 		XDG_SESSION_DESKTOP: string;
 		LOGNAME: string;
 		XDG_SESSION_TYPE: string;
-		npm_package_dev: string;
 		npm_config_init_module: string;
 		SYSTEMD_EXEC_PID: string;
 		_: string;
@@ -190,7 +181,6 @@ declare module '$env/dynamic/private' {
 		GDM_LANG: string;
 		HOME: string;
 		USERNAME: string;
-		npm_package_peer: string;
 		LANG: string;
 		LS_COLORS: string;
 		XDG_CURRENT_DESKTOP: string;
@@ -198,7 +188,6 @@ declare module '$env/dynamic/private' {
 		MEMORY_PRESSURE_WATCH: string;
 		VTE_VERSION: string;
 		WAYLAND_DISPLAY: string;
-		npm_package_resolved: string;
 		GIT_ASKPASS: string;
 		GNOME_TERMINAL_SCREEN: string;
 		INIT_CWD: string;
@@ -206,7 +195,6 @@ declare module '$env/dynamic/private' {
 		npm_lifecycle_script: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		GNOME_SETUP_DISPLAY: string;
-		npm_package_optional: string;
 		npm_config_npm_version: string;
 		XDG_SESSION_CLASS: string;
 		TERM: string;
@@ -243,8 +231,8 @@ declare module '$env/dynamic/private' {
 		MAIL: string;
 		npm_node_execpath: string;
 		OLDPWD: string;
-		npm_package_engines_node: string;
 		TERM_PROGRAM: string;
+		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}

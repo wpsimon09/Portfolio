@@ -291,9 +291,12 @@ const Third = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   })}</div></section>`;
 });
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  const prerender = true;
   let y = 20;
   console.log(y);
   let { selectedProject = {} } = $$props;
+  if ($$props.prerender === void 0 && $$bindings.prerender && prerender !== void 0)
+    $$bindings.prerender(prerender);
   if ($$props.selectedProject === void 0 && $$bindings.selectedProject && selectedProject !== void 0)
     $$bindings.selectedProject(selectedProject);
   return `<div class="h-full flex-col items-center snap-y overflow-auto relative ">${``}

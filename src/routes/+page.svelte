@@ -2,6 +2,9 @@
     import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 
+
+    export const prerender = true;
+    
     import FirstSection from "$lib/components/Sections/First/FirstSection.svelte";
     import Footer from "$lib/components/Sections/Footer/Footer.svelte";
 	import SecondSection from "$lib/components/Sections/Second/Second.svelte"

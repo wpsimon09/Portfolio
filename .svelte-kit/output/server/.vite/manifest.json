@@ -37,6 +37,11 @@
     "file": "_app/immutable/assets/_layout.5c291261.css",
     "src": "src/routes/+layout.css"
   },
+  "src/routes/+layout.js": {
+    "file": "entries/pages/_layout.js",
+    "isEntry": true,
+    "src": "src/routes/+layout.js"
+  },
   "src/routes/+layout.svelte": {
     "css": [
       "_app/immutable/assets/_layout.5c291261.css"

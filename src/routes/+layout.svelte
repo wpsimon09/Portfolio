@@ -2,8 +2,7 @@
 	import "../app.css";
 	import Footer from "$lib/components/Sections/Footer/Footer.svelte";
 
-	export const prerender = true;
-</script>
+	</script>
 
 <div class="flex flex-col w-screen h-screen bg-zinc-900">
 	<main class="w-full h-full relative">
