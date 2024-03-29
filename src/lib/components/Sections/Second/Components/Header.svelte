@@ -28,7 +28,7 @@
 </script>
 
 <div class="w-full flex h-full flex-col items-center ">
-    <h1 transition:scale={{ duration: 200, delay: 200, opacity: 0.1, start: 0.5, easing: quintOut }} class="text-6xl lg:text-9xl text-slate-100 font-julius lg:mt-20 mt-2 ">
+    <h1 transition:scale={{ duration: 200, delay: 200, opacity: 0.1, start: 0.5, easing: quintOut }} class="text-6xl lg:text-9xl dark:text-slate-100 text-zinc-800 font-julius lg:mt-20 mt-2 ">
         {headerText}
     </h1>
     {#if isHoveredOn && headerText == "About me"}

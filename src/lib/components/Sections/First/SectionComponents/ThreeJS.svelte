@@ -84,7 +84,6 @@
             scene.add(rectLight);
             scene.add(directionLight);
             scene.add(ambient);
-            scene.add(cube);
 
             let mixer;
             let activeAction;

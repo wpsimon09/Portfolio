@@ -5,7 +5,7 @@
 	export const prerender = true;
 </script>
 
-<div class="flex flex-col w-screen h-screen bg-zinc-900">
+<div class="flex flex-col w-screen h-screen bg-zinc-100 dark:bg-zinc-900">
 	<main class="w-full h-full relative">
 		<slot />
 	</main>
