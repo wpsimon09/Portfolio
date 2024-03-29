@@ -6,8 +6,8 @@ export default {
       fontFamily:{
         capriola: ["Capriola"],
         julius: ["Julius Sans One"]
-        
-      }
+      },
+      
     },
   },
 }

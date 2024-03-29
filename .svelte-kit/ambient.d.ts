@@ -59,6 +59,7 @@ declare module '$env/static/private' {
 	export const _: string;
 	export const XAUTHORITY: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
+	export const GJS_DEBUG_TOPICS: string;
 	export const VSCODE_INJECTION: string;
 	export const GDM_LANG: string;
 	export const HOME: string;
@@ -68,13 +69,14 @@ declare module '$env/static/private' {
 	export const XDG_CURRENT_DESKTOP: string;
 	export const npm_package_version: string;
 	export const MEMORY_PRESSURE_WATCH: string;
-	export const VTE_VERSION: string;
 	export const WAYLAND_DISPLAY: string;
 	export const GIT_ASKPASS: string;
-	export const GNOME_TERMINAL_SCREEN: string;
+	export const INVOCATION_ID: string;
+	export const MANAGERPID: string;
 	export const INIT_CWD: string;
 	export const CHROME_DESKTOP: string;
 	export const npm_lifecycle_script: string;
+	export const GJS_DEBUG_OUTPUT: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const GNOME_SETUP_DISPLAY: string;
 	export const npm_config_npm_version: string;
@@ -87,7 +89,6 @@ declare module '$env/static/private' {
 	export const LESSOPEN: string;
 	export const USER: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
-	export const GNOME_TERMINAL_SERVICE: string;
 	export const DISPLAY: string;
 	export const npm_lifecycle_event: string;
 	export const SHLVL: string;
@@ -99,6 +100,7 @@ declare module '$env/static/private' {
 	export const DEBUGINFOD_URLS: string;
 	export const npm_package_json: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
+	export const JOURNAL_STREAM: string;
 	export const XDG_DATA_DIRS: string;
 	export const GDK_BACKEND: string;
 	export const npm_config_noproxy: string;
@@ -110,8 +112,10 @@ declare module '$env/static/private' {
 	export const npm_config_python: string;
 	export const npm_config_global_prefix: string;
 	export const MAIL: string;
+	export const GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 	export const npm_node_execpath: string;
 	export const npm_config_engine_strict: string;
+	export const GIO_LAUNCHED_DESKTOP_FILE: string;
 	export const OLDPWD: string;
 	export const TERM_PROGRAM: string;
 	export const NODE_ENV: string;
@@ -179,6 +183,7 @@ declare module '$env/dynamic/private' {
 		_: string;
 		XAUTHORITY: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
+		GJS_DEBUG_TOPICS: string;
 		VSCODE_INJECTION: string;
 		GDM_LANG: string;
 		HOME: string;
@@ -188,13 +193,14 @@ declare module '$env/dynamic/private' {
 		XDG_CURRENT_DESKTOP: string;
 		npm_package_version: string;
 		MEMORY_PRESSURE_WATCH: string;
-		VTE_VERSION: string;
 		WAYLAND_DISPLAY: string;
 		GIT_ASKPASS: string;
-		GNOME_TERMINAL_SCREEN: string;
+		INVOCATION_ID: string;
+		MANAGERPID: string;
 		INIT_CWD: string;
 		CHROME_DESKTOP: string;
 		npm_lifecycle_script: string;
+		GJS_DEBUG_OUTPUT: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		GNOME_SETUP_DISPLAY: string;
 		npm_config_npm_version: string;
@@ -207,7 +213,6 @@ declare module '$env/dynamic/private' {
 		LESSOPEN: string;
 		USER: string;
 		VSCODE_GIT_IPC_HANDLE: string;
-		GNOME_TERMINAL_SERVICE: string;
 		DISPLAY: string;
 		npm_lifecycle_event: string;
 		SHLVL: string;
@@ -219,6 +224,7 @@ declare module '$env/dynamic/private' {
 		DEBUGINFOD_URLS: string;
 		npm_package_json: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
+		JOURNAL_STREAM: string;
 		XDG_DATA_DIRS: string;
 		GDK_BACKEND: string;
 		npm_config_noproxy: string;
@@ -230,8 +236,10 @@ declare module '$env/dynamic/private' {
 		npm_config_python: string;
 		npm_config_global_prefix: string;
 		MAIL: string;
+		GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 		npm_node_execpath: string;
 		npm_config_engine_strict: string;
+		GIO_LAUNCHED_DESKTOP_FILE: string;
 		OLDPWD: string;
 		TERM_PROGRAM: string;
 		NODE_ENV: string;
