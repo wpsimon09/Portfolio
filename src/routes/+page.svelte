@@ -1,54 +1,56 @@
 <script>
     import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import { browser } from '$app/environment';
 
     import FirstSection from "$lib/components/Sections/First/FirstSection.svelte";
     import Footer from "$lib/components/Sections/Footer/Footer.svelte";
 	import SecondSection from "$lib/components/Sections/Second/Second.svelte"
 	import Third from "$lib/components/Sections/Third/Third.svelte";
     import ProjectShow from '$lib/components/Sections/Second/Components/ProjectShow.svelte';
+	import { onMount } from 'svelte';
+
 
     let y = 20;
     console.log(y);
+
+    onMount(()=>{
+        if(browser){
+            window.scrollTo(0,2)
+        }
+    })
 
     let creditsVisible = false;
 
     let isProjectVisible = false;
 
-    let visibleProjectInofo = {
-        title:"",
-        description:"",
-        }
-
     export let selectedProject = {}
 
     function handleProjectShowEvent(e){
-        console.log(e.details)
         selectedProject = e.detail.passed_project;
         isProjectVisible = true;
     }
 </script>
 
 
-<div on:scroll={(event)=>{y = event.currentTarget.scrollTop}} class=" h-full flex-col items-center snap-y overflow-auto relative ">
+<div on:scroll={(event)=>{y = event.currentTarget.scrollTop}} class=" h-[102vh] flex-col items-center snap-y overflow-auto relative ">
 
     {#if isProjectVisible}
         <ProjectShow on:click={()=>{isProjectVisible = false}} project = {selectedProject} />
     {/if}
   
-    <section class="w-full h-full flex flex-col items-center snap-center">
+    <section class="w-full h-[102vh] flex flex-col items-center snap-center">
         <FirstSection/>
     </section> 
     
-    <section class="w-full h-full flex flex-col items-center snap-center">
-        <SecondSection/>
+    <section class="w-full lg:h-[102vh] flex flex-col items-center lg:snap-center">
+        <SecondSection y={y}/>
     </section> 
     
     <section class="w-full  flex flex-col items-center snap-start">
-        <Third on:onProjectShow={handleProjectShowEvent} y={y}/>
-        
+        <Third on:onProjectShow={handleProjectShowEvent} y={y}/>        
     </section>
-    
+
     <section class="w-full  flex flex-col items-center snap-start">
         <Footer on:click={()=>creditsVisible ? creditsVisible = false : creditsVisible = true}/>
             {#if creditsVisible}

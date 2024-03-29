@@ -1,7 +1,11 @@
 <script>
-// @ts-nocheck
+    import { scale } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 
-   
+// @ts-nocheck
+    export let y;
+    export let trashold;
+
     let hobbies = [{
         "name": "Playing guitar",
         "icon":"icons/guitar.png"
@@ -38,93 +42,23 @@
 
 </script>
 
-<div class="flex flex-col items-center h-full justify-center realtive z-50">
-    <div  class="relative flex flex-col justify-center mr-20 items-center h-full main">
-        {#each hobbies as hobby}
-            <div class=" absolute duration-100 circle flex flex-col items-center bg-zinc-800 shadow-2xl w-32 h-32  rounded-full justify-center">
-                <dvi class="">
-                    <img class="w-16 h-16" src="{hobby.icon}" alt="hobbypng"/>
-                </dvi>
-                <p class="text-slate-200">{hobby.name}</p>
-            </div>
-        {/each}
+{#if y > trashold}        
+    <div transition:scale={{ duration: 400, delay: 10, opacity: 0.0, start: 0.2, easing: quintOut }} class="flex flex-col items-center h-full w-full justify-center realtive z-50">
+        <div  class="relative flex flex-col justify-center mr-20 items-center w-full h-full">
+            {#each hobbies as hobby}
+                <div class=" absolute duration-100 lg:circle circle-sm flex ml-6 flex-col items-center  w-20 h-20 lg:w-32 lg:h-32  rounded-full justify-center">
+                    <div class="w-full h-full flex flex-col items-center rounded-full bg-zinc-700 p-4 lg:p-5 shadow-2xl">
+                        <img class="h-full w-full" src="{hobby.icon}" alt="hobbypng"/>
+                    </div>    
+                    <p class="dark:text-slate-200 text-zinc-800 w-full text-center mt-2">{hobby.name}</p>
+                </div>
+            {/each}
+        </div> 
     </div>
- 
-</div>
+{/if}
 
 <style>
 
-.circle {
-    left: calc(50% - 25px);
-    top: calc(50% - 25px);
-}
-.circle:nth-child(1) {
-        transform: rotate(45deg) translateX(240px) rotate(-45deg);
-    }
-
-    .circle:nth-child(2) {
-        transform: rotate(90deg) translateX(240px) rotate(-90deg);
-    }
-
-    .circle:nth-child(3) {
-        transform: rotate(135deg) translateX(240px) rotate(-135deg);
-    }
-
-    .circle:nth-child(4) {
-        transform: rotate(180deg) translateX(240px) rotate(-180deg);
-    }
-
-    .circle:nth-child(5) {
-        transform: rotate(225deg) translateX(240px) rotate(-225deg);
-    }
-
-    .circle:nth-child(6) {
-        transform: rotate(270deg) translateX(240px) rotate(-270deg);
-    }
-
-    .circle:nth-child(7) {
-        transform: rotate(315deg) translateX(240px) rotate(-315deg);
-    }
-
-    .circle:nth-child(8) {
-        transform: rotate(360deg) translateX(240px) rotate(-360deg);
-    }
-
-.circle-sm {
-    left: calc(50% - 25px);
-    top: calc(50% - 25px);
-}
-.circle-sm:nth-child(1) {
-        transform: rotate(45deg) translateX(100px) rotate(-45deg);
-    }
-
-    .circle-sm:nth-child(2) {
-        transform: rotate(90deg) translateX(100px) rotate(-90deg);
-    }
-
-    .circle-sm:nth-child(3) {
-        transform: rotate(135deg) translateX(100px) rotate(-135deg);
-    }
-
-    .circle-sm:nth-child(4) {
-        transform: rotate(180deg) translateX(100px) rotate(-180deg);
-    }
-
-    .circle-sm:nth-child(5) {
-        transform: rotate(225deg) translateX(100px) rotate(-225deg);
-    }
-
-    .circle-sm:nth-child(6) {
-        transform: rotate(270deg) translateX(100px) rotate(-270deg);
-    }
-
-    .circle-sm:nth-child(7) {
-        transform: rotate(315deg) translateX(100px) rotate(-315deg);
-    }
-
-    .circle-sm:nth-child(8) {
-        transform: rotate(360deg) translateX(100px) rotate(-360deg);
-    }
 
 </style>
 
