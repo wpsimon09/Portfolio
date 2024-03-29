@@ -30,7 +30,7 @@
 </script>
 
 
-<div on:scroll={(event)=>{y = event.currentTarget.scrollTop}} class=" h-full flex-col items-center snap-y overflow-auto relative ">
+<div on:scroll={(event)=>{y = event.currentTarget.scrollTop}} class=" h-screen flex-col items-center snap-y overflow-auto relative ">
 
     {#if isProjectVisible}
         <ProjectShow on:click={()=>{isProjectVisible = false}} project = {selectedProject} />
@@ -40,7 +40,7 @@
         <FirstSection/>
     </section> 
     
-    <section class="w-full h-full flex flex-col items-center snap-center">
+    <section class="w-full lg:h-full flex flex-col items-center snap-center">
         <SecondSection/>
     </section> 
     

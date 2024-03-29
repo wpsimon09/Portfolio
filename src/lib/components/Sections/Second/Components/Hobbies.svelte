@@ -41,9 +41,9 @@
 <div class="flex flex-col items-center h-full justify-center realtive z-50">
     <div  class="relative flex flex-col justify-center mr-20 items-center h-full main">
         {#each hobbies as hobby}
-            <div class=" absolute duration-100 lg:circle circle-sm flex flex-col items-center bg-zinc-800 shadow-2xl w-32 h-32  rounded-full justify-center ">
+            <div class=" absolute duration-100 lg:circle circle-sm flex flex-col items-center bg-zinc-800 shadow-2xl w-16 h-16 lg:w-32 lg:h-32 lg:p-10 p-5 rounded-full justify-center ">
                 <dvi class="">
-                    <img class="w-16 h-16" src="{hobby.icon}" alt="hobbypng"/>
+                    <img class="h-full w-full" src="{hobby.icon}" alt="hobbypng"/>
                 </dvi>
                 <p class="text-slate-200">{hobby.name}</p>
             </div>

@@ -3,16 +3,27 @@
     import Project from "./components/project.svelte";
     import projects from "./components/projects.json";
 
+    let isMobile
     let trasholds = []
-
-    for(let i = 0; i< projects.length; i++){
-        trasholds.push(1140 + (250 * i))
-    }
+    onMount(()=>{
+        isMobile = navigator.userAgent.isMobile 
+    
+        console.log(isMobile)
+    })
+    
+            for(let i = 0; i< projects.length; i++){
+                if(isMobile){
+                    trasholds.push(1890 + (300 * i))
+                }
+                else{
+        
+                    trasholds.push(2000 + (160 * i))
+                }
+            }
 
     console.log(trasholds);
     export let y
 </script>
-
 
 <section class="w-full h-full relative items-center flex flex-col my-10">
     <h1 class="text-4xl mb-10 text-white"> My projects </h1>
