@@ -43,7 +43,7 @@
 </script>
 
 {#if y > trashold}        
-    <div transition:scale={{ duration: 400, delay: 10, opacity: 0.0, start: 0.2, easing: quintOut }} class="flex flex-col items-center h-full justify-center realtive z-50">
+    <div transition:scale={{ duration: 400, delay: 10, opacity: 0.0, start: 0.2, easing: quintOut }} class="flex flex-col items-center h-full  justify-center realtive z-50">
         <div  class="relative flex flex-col justify-center mr-20 items-center h-full main">
             {#each hobbies as hobby}
                 <div class=" absolute duration-100 lg:circle circle-sm flex flex-col items-center bg-zinc-800 shadow-2xl w-16 h-16 lg:w-32 lg:h-32 lg:p-10 p-5 rounded-full justify-center ">
