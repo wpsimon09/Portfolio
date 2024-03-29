@@ -15,15 +15,9 @@
 
     let isProjectVisible = false;
 
-    let visibleProjectInofo = {
-        title:"",
-        description:"",
-        }
-
     export let selectedProject = {}
 
     function handleProjectShowEvent(e){
-        console.log(e.details)
         selectedProject = e.detail.passed_project;
         isProjectVisible = true;
     }
@@ -41,14 +35,13 @@
     </section> 
     
     <section class="w-full lg:h-full flex flex-col items-center lg:snap-center">
-        <SecondSection/>
+        <SecondSection y={y}/>
     </section> 
     
     <section class="w-full  flex flex-col items-center snap-start">
-        <Third on:onProjectShow={handleProjectShowEvent} y={y}/>
-        
+        <Third on:onProjectShow={handleProjectShowEvent} y={y}/>        
     </section>
-    
+
     <section class="w-full  flex flex-col items-center snap-start">
         <Footer on:click={()=>creditsVisible ? creditsVisible = false : creditsVisible = true}/>
             {#if creditsVisible}
