@@ -24,18 +24,18 @@
 				{project.description}
 			</p>
 
-			<h2 class="dark:text-white text-lg lg:text-xl mt-5">Used tech:</h2>
+			<h2 class="dark:text-white text-lg mb-10 lg:text-xl mt-5">Used tech:</h2>
 			<div
-				class="  rounded-lg p-2 dark:shadow-2xl bg-white h-52  w-1/2 justify-center overflow-x-auto overflow-y-hidden flex flex-row items-center"
+				class=" dark:shadow-2xl py-10 w-[90%] lg:w-1/2 justify-center overflow-x-auto overflow-y-hidden flex flex-row items-center"
 			>
 				{#each project.tech_stack as used_tech}
-					<p class="dark:text-slate-100 italic text-md lg:text-lg ml-2">
+					<p class="dark:text-slate-100 text-zinc-900 text-md lg:text-lg h-20 ml-2">
 						{used_tech},
 					</p>
 				{/each}
 			</div>
 			<div class="flex flex-col items-center h-full justify-center">
-				<div class="flex flex-col items-center h-[300px] lg:h-[400px] p-10">
+				<div class="flex flex-col items-center h-[200px] lg:h-[400px] lg:p-10">
 					<img class="w-full h-full rounded-lg" src={project.image} alt="projectimage" />
 				</div>
 				<div class="flex flex-row gap-10 items-center justify-between">
