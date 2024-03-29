@@ -24,7 +24,8 @@
             camera.position.z = 420;
             camera.position.y = 4;
             camera.rotateX(THREE.MathUtils.degToRad(10));
-            const renderer = new THREE.WebGLRenderer({ canvas: canvas });
+            const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias:true });
+            
 
             renderer.setSize(canvas.clientWidth, canvas.clientHeight);
 
