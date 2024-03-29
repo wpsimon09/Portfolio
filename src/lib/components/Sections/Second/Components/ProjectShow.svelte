@@ -8,10 +8,10 @@
 <div
 	transition:slide={{ delay: 10, duration: 500, easing: quintOut, axis: 'y' }}
 	on:click
-	class=" w-screen h-screen fixed flex flex-col items-center backdrop-blur-xl justify-center bg-opacity-5 z-[98]"
+	class=" w-screen h-screen fixed fixed flex flex-col items-center backdrop-blur-xl justify-center bg-opacity-5 z-[98]"
 >
 	<div
-		class="w-full py-2 lg:w-1/2 h-[70%] overflow-y-auto p-2 flex flex-col border border-spacing-1 items-center bg-zinc-800 border-1-white rounded-xl z-[99]"
+		class="w-full py-2 lg:w-1/2 h-[60%] overflow-y-auto p-2 flex flex-col border border-spacing-1 items-center bg-zinc-800 border-1-white rounded-xl z-[99]"
 	>
 		<h1 class="text-slate-100 w-full text-center font-bold text-3xl font-julius mt-10">
 			{project.title}
