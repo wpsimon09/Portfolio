@@ -19,17 +19,17 @@
 		</h1>
 		<div class="h-0.5 bg-zinc-800 text-slate-100 dark:bg-slate-50 w-80 mt-4 dark:text-zinc-800">s</div>
 		<div class="flex flex-col items-center w-full h-full">
-			<p class="text-zinc-800 dark:text-white w-2/3 text-xl lg:text-2xl">
+			<p class="text-zinc-800 dark:text-white w-[90%] lg:w-2/3 text-lg lg:text-2xl">
 				<br />
 				{project.description}
 			</p>
 
-			<h2 class="dark:text-white text-lg mb-10 lg:text-xl mt-5">Used tech:</h2>
+			<h2 class="dark:text-white text-lg my-5 lg:text-xl">Used tech:</h2>
 			<div
 				class=" dark:shadow-2xl py-10 w-[90%] lg:w-1/2 justify-center overflow-x-auto overflow-y-hidden flex flex-row items-center"
 			>
 				{#each project.tech_stack as used_tech}
-					<p class="dark:text-slate-100 text-zinc-900 text-md lg:text-lg h-20 ml-2">
+					<p class="dark:text-slate-100 text-zinc-900 text-md lg:text-lg h-20 px-2">
 						{used_tech},
 					</p>
 				{/each}
