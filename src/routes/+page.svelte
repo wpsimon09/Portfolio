@@ -40,7 +40,7 @@
         <FirstSection/>
     </section> 
     
-    <section class="w-full lg:h-full flex flex-col items-center snap-center">
+    <section class="w-full lg:h-full flex flex-col items-center lg:snap-center">
         <SecondSection/>
     </section> 
     
