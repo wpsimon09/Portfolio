@@ -4,10 +4,11 @@
     
     export let y;
     export let trashold;
+    export let scrollOutThrahsold;
 </script>
 
 
-{#if y>trashold  }    
+{#if y>trashold && y<trashold + scrollOutThrahsold }    
 <div transition:scale={{ duration: 400, delay: 10, opacity: 0.0, start: 0.2 , easing: quintOut }} class=" w-full h-full flex flex-col lg:flex-row items-center z-50 ">
     <div class="  w-full lg:w-1/2 scale-75 shadow-2xl flex flex-col items-center">
         <img alt="me" class="rounded-lg w-full h-full" src="icons/me.png"/>

@@ -31,13 +31,13 @@
     <h1 transition:scale={{ duration: 200, delay: 200, opacity: 0.1, start: 0.5, easing: quintOut }} class="text-6xl lg:text-9xl dark:text-slate-100 text-zinc-800 font-julius lg:mt-20 mt-2 ">
         {headerText}
     </h1>
-    {#if isHoveredOn && headerText == "About me"}
+    {#if headerText == "About me"}
         <div transition:scale={{ duration: 400, delay: 10, opacity: 0.0, start: 0.2 , easing: quintOut }} class="flex flex-col w-full h-full items-center">
-            <AboutMe y={y} trashold={isOnPhone?600:0}/>
+            <AboutMe y={y} trashold={isOnPhone?600:800} scrollOutThrahsold={isOnPhone?900:480}/>
         </div>
-    {:else if isHoveredOn && headerText == "Hobbies"}
+    {:else if headerText == "Hobbies"}
         <div transition:scale={{ duration: 400, delay: 10, opacity: 0.0, start: 0.2, easing: quintOut }} class="flex flex-col w-full h-full items-center">
-            <Hobbies y={y} trashold={isOnPhone?1370:0 }/>
+            <Hobbies y={y} trashold={isOnPhone?1370:800 } scrollOutThrahsold={isOnPhone?800:480}/>
         </div>
     {/if}
 </div>

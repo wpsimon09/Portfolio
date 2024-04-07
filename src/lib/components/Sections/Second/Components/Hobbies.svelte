@@ -5,6 +5,8 @@
 // @ts-nocheck
     export let y;
     export let trashold;
+    export let scrollOutThrahsold;
+
 
     let hobbies = [{
         "name": "Playing guitar",
@@ -42,7 +44,7 @@
 
 </script>
 
-{#if y > trashold}        
+{#if y > trashold && y<trashold + scrollOutThrahsold}        
     <div transition:scale={{ duration: 400, delay: 10, opacity: 0.0, start: 0.2, easing: quintOut }} class="flex flex-col items-center h-full w-full justify-center realtive z-50">
         <div  class="relative flex flex-col justify-center mr-20 -mt-20 items-center w-full h-full">
             {#each hobbies as hobby}
