@@ -29,9 +29,8 @@
 <!-- svelte-ignore a11y-mouse-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
-	class="h-full w-full bg-zinc-100 dark:bg-zinc-800 hover:p-2 duration-150 mt-20 lg:mt-2"
-	on:mouseover={() => mouseOn()}
-	on:mouseout={() => mouseOff()}
+	class="h-full w-full bg-zinc-100 dark:bg-zinc-800 duration-150 mt-20 lg:mt-2"
+
 >
-	<Header {y} isHoveredOn={isHovered} headerText={header} />
+	<Header {y} headerText={header} />
 </div>
