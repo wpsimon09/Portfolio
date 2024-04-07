@@ -33,13 +33,13 @@
 </script>
 
 
-<div on:scroll={(event)=>{y = event.currentTarget.scrollTop}} class=" h-[102vh] flex-col items-center snap-y overflow-auto relative ">
+<div on:scroll={(event)=>{y = event.currentTarget.scrollTop}} class=" h-[102vh] flex-col items-center snap-y snap-mandatory overflow-auto relative ">
 
     {#if isProjectVisible}
         <ProjectShow on:click={()=>{isProjectVisible = false}} project = {selectedProject} />
     {/if}
   
-    <section class="w-full h-[102vh] flex flex-col items-center snap-center">
+    <section class="w-full h-[102vh] flex flex-col items-center snap-start">
         <FirstSection/>
     </section> 
     
