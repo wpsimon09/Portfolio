@@ -10,10 +10,10 @@
 		for (let i = 0; i < projects.length; i++) {
 			if (window.screen.width < 700) {
 				//for phone
-				trasholds.push(1890 + 250 * i);
+				trasholds.push(2890 + 250 * i);
 			} else {
 				//for desktop
-				trasholds.push(1140 + 250 * i);
+				trasholds.push(2140 + 250 * i);
 			}
 			console.log(window.screen.width);
 		}
