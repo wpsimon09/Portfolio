@@ -53,7 +53,7 @@
     "description": "During the We Are in IT Together conference organized by HZ University of Applied Sciences, I had an opportunity to teach a workshop where participants could learn what it takes to create interactive applications or game engines. The workshop covered basic topics such as rendering pipeline, buffers, graphics APIs, shading models, and more. Attendance reached the maximum amount of participants and harvested great success.    ",
     "tech_stack": ["C++", "GLSL", "OpenGL", "Computer graphics", "Teaching"],
     "link":"https://github.com/wpsimon09/OpenGL-Workshop",
-    "link_deployement" : "/presentations/presentation.pdf",
+    "link_deployement" : "presentations/presentation.pdf",
     "image" : ["projects/workshop.jpg"]
   }
 ]
