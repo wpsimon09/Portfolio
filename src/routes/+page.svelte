@@ -7,6 +7,7 @@
     import Footer from "$lib/components/Sections/Footer/Footer.svelte";
 	import SecondSection from "$lib/components/Sections/Second/Second.svelte"
 	import Third from "$lib/components/Sections/Third/Third.svelte";
+    import Fourth from "$lib/components/Sections/Fourth/Fourth.svelte"
     import ProjectShow from '$lib/components/Sections/Second/Components/ProjectShow.svelte';
 	import { onMount } from 'svelte';
 
@@ -39,17 +40,22 @@
         <ProjectShow on:click={()=>{isProjectVisible = false}} project = {selectedProject} />
     {/if}
   
-    <section class="w-full h-[102vh] flex flex-col items-center snap-start">
+    <section class="w-full h-[100vh] flex flex-col items-center snap-start">
         <FirstSection/>
     </section> 
     
-    <section class="w-full lg:h-[102vh] flex flex-col items-center lg:snap-center">
+    <section class="w-full lg:h-[100vh] flex flex-col items-center lg:snap-center">
         <SecondSection y={y}/>
+    </section> 
+
+    <section class="w-full lg:h-[100vh] flex flex-col items-center snap-start">
+        <Fourth y={y}/>
     </section> 
     
     <section class="w-full  flex flex-col items-center snap-start">
         <Third on:onProjectShow={handleProjectShowEvent} y={y}/>        
     </section>
+    
 
     <section class="w-full  flex flex-col items-center snap-start">
         <Footer on:click={()=>creditsVisible ? creditsVisible = false : creditsVisible = true}/>
