@@ -36,7 +36,7 @@
 </script>
 
 <section class="h-screen w-screen  flex flex-col items-center bg-zinc-100 dark:bg-zinc-800">
-	<h1 class="text-6xl lg:text-9xl dark:text-slate-100 text-zinc-800 font-julius mt-10">Skills{y}</h1>
+	<h1 class="text-6xl lg:text-9xl dark:text-slate-100 text-zinc-800 font-julius mt-10">Skills</h1>
 		{#if selectedSkill != null && replayAnimation}	
 			<div transition:blur={{ amount: 10 }} class="w-full flex flex-col items-center relative">
 				<SkillDecsription on:click={()=>{selectedSkill =null,isFirstAnimation=true}} skill = {selectedSkill}/>
@@ -44,7 +44,7 @@
 		{/if}
 		<div class="w-screen h-full flex flex-col items-center justify-center">
 			{#if y>trashold_in && y<trahsold_out}	
-				<div transition:blur={{ amount: 10 }} class="h-80 w-[99%] gap-1 flex flex-row items-center overflow-x-auto">
+				<div transition:blur={{ amount: 10 }} class="h-80 w-[90%] pl-7 gap-6 flex flex-row items-center overflow-x-auto">
 					{#each skills as skill, i}
 						<div>
 							<Skill on:skillClicked={skillSelected} index={i} _skill={skill} />
