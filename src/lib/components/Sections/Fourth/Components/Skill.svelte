@@ -20,15 +20,10 @@
 	}
 	offset = calculateEffect(index);
 	let scale = calculateScale(index);
-	console.log(offset);
 
   	const dispatch = createEventDispatcher();
 
-  	const onSkillClikced = (skill) => {
-    	dispatch('skillClicked',{
-			"skill":skill
-		});
-  	};
+    	
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -36,7 +31,11 @@
 <button
 	class="rounded-full p-5 w-40 h-40 flex flex-col items-center justify-center shadow-2xl hover:w-48 hover:h-48 hover:bg-zinc-100 bg-slate-200  duration-150"
 	style="{offset};{scale}"
-	on:click={onSkillClikced(this)}
+	on:click={()=>{
+		dispatch('skillClicked',{
+			skill:_skill
+		});
+	}}
 >
 <div class="h-30 w-30 flex flex-col items-center justify-center rounded-full">
 	<img class="h-30 w-30 object-scale-down rounded-full" src={_skill.src} alt="skill"/>
