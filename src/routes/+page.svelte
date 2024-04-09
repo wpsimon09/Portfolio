@@ -49,7 +49,7 @@
     </section> 
 
     <section class="w-full lg:h-[100vh] flex flex-col items-center snap-start">
-        <Fourth/>
+        <Fourth y={y}/>
     </section> 
     
     <section class="w-full  flex flex-col items-center snap-start">
