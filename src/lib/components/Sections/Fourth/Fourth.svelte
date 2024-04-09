@@ -39,7 +39,7 @@
 	<h1 class="text-6xl lg:text-9xl dark:text-slate-100 text-zinc-800 font-julius mt-10">Skills{y}</h1>
 		{#if selectedSkill != null && replayAnimation}	
 			<div transition:blur={{ amount: 10 }} class="w-full flex flex-col items-center relative">
-				<SkillDecsription on:click={()=>selectedSkill =null} skill = {selectedSkill}/>
+				<SkillDecsription on:click={()=>{selectedSkill =null,isFirstAnimation=true}} skill = {selectedSkill}/>
 			</div>
 		{/if}
 		<div class="w-screen h-full flex flex-col items-center justify-center">
