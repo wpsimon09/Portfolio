@@ -20,11 +20,17 @@
 	}
 
 	let selectedSkill = null;
-	let replayAnimation = false
+	let replayAnimation = false;
+	let isFirstAnimation = true;
 	function skillSelected(e){
 		replayAnimation = false
-		selectedSkill = e.detail.skill;
-		replayAnimation = true
+
+		setTimeout(()=>{
+
+			selectedSkill = e.detail.skill;
+			replayAnimation = true
+		},isFirstAnimation?0:400)
+		isFirstAnimation = false;
 	}
 
 </script>
