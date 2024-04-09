@@ -1,0 +1,92 @@
+[
+    {
+        "src": "skills/cpp.png",
+        "name": "C++",
+        "description": "General-purpose programming language known for its performance and versatility."
+    },
+    {
+        "src": "skills/git.png",
+        "name": "Git",
+        "description": "Version control system used for tracking changes in source code during software development."
+    },
+    {
+        "src": "skills/laravel.png",
+        "name": "Laravel",
+        "description": "PHP framework for building web applications following the MVC pattern."
+    },
+    {
+        "src": "skills/oop.png",
+        "name": "Object-Oriented Programming",
+        "description": "Paradigm for organizing and structuring software around objects and classes."
+    },
+    {
+        "src": "skills/svelte.png",
+        "name": "Svelte",
+        "description": "JavaScript framework for building reactive web applications with a focus on simplicity and performance."
+    },
+    {
+        "src": "skills/uwp.png",
+        "name": "Universal Windows Platform (UWP)",
+        "description": "Framework for building Windows apps that run across all devices running Windows 10."
+    },
+    {
+        "src": "skills/cs.png",
+        "name": "C#",
+        "description": "Object-oriented programming language developed by Microsoft, widely used for building Windows applications."
+    },
+    {
+        "src": "skills/java.png",
+        "name": "Java",
+        "description": "Popular programming language known for its portability, security, and scalability."
+    },
+    {
+        "src": "skills/linux.png",
+        "name": "Linux",
+        "description": "Open-source operating system kernel used in a wide variety of computing devices."
+    },
+    {
+        "src": "skills/opengl.png",
+        "name": "OpenGL",
+        "description": "Cross-platform API for rendering 2D and 3D graphics."
+    },
+    {
+        "src": "skills/tailwind.png",
+        "name": "Tailwind CSS",
+        "description": "Utility-first CSS framework for building custom designs quickly and easily."
+    },
+    {
+        "src": "skills/xaml.png",
+        "name": "XAML (Extensible Application Markup Language)",
+        "description": "Declarative XML-based language used to initialize structured values and objects."
+    },
+    {
+        "src": "skills/docker.png",
+        "name": "Docker",
+        "description": "Platform for developing, shipping, and running applications in containers."
+    },
+    {
+        "src": "skills/js.png",
+        "name": "JavaScript",
+        "description": "High-level, interpreted programming language used for web development and building interactive elements on websites."
+    },
+    {
+        "src": "skills/node.png",
+        "name": "Node.js",
+        "description": "JavaScript runtime built on Chrome's V8 JavaScript engine for building scalable network applications."
+    },
+    {
+        "src": "skills/php.png",
+        "name": "PHP",
+        "description": "Server-side scripting language designed for web development, commonly used for creating dynamic web pages."
+    },
+    {
+        "src": "skills/threejs.png",
+        "name": "Three.js",
+        "description": "JavaScript library for creating and displaying animated 3D computer graphics in a web browser."
+    },
+    {
+        "src": "skills/rendering.png",
+        "name": "Computer Graphics & Graphics Programming",
+        "description": "Field of study and practice focused on creating images, diagrams, and animations using computers."
+    }
+]

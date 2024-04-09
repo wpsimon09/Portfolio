@@ -49,13 +49,13 @@
 						</a>
 					{/if}
 				</div>
-				<p class="mt-10 text-zinc-800 dark:text-white w-[90%] lg:w-2/3 text-lg lg:text-2xl">
+				<p class="mt-10 text-zinc-800 dark:text-white w-[90%] lg:w-2/3 text-lg lg:text-2xl text-justify">
 					{project.description}
 				</p>
 	
 				<h2 class="dark:text-white text-lg my-5 lg:text-xl">Used tech:</h2>
 				<div
-					class="rounded-md bg-opacity-10 shadow-2xl p-2 lg:h-20 lg:py-10 w-[90%] lg:w-1/2 mb-5 justify-center overflow-x-auto overflow-y-hidden flex bg-zinc-500 flex-row items-center"
+					class="rounded-md bg-opacity-10 shadow-2xl p-2 lg:h-20 lg:py-10 w-full lg:w-1/2 mb-5 justify-center overflow-x-auto overflow-y-hidden flex bg-zinc-500 flex-row items-center"
 				>
 					{#each project.tech_stack as used_tech}
 						<p class="dark:text-slate-100 text-zinc-900 text-md lg:text-lg px-2">
