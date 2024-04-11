@@ -11,8 +11,8 @@
 {#if y>trashold && y<trashold + scrollOutThrahsold }    
 <div transition:scale={{ duration: 400, delay: 10, opacity: 0.0, start: 0.2 , easing: quintOut }} class=" w-full h-full flex flex-col lg:flex-row items-center z-50 ">
     <div class="  w-full lg:w-1/2 scale-75 shadow-2xl flex flex-col items-center">
-        <img alt="me" class="rounded-lg w-full h-full" src="icons/me.png"/>
-        <a class="text-xl w-full mt-4 text-center hover:underline duration-200  dark:text-white text-zinc-800" target="_blank" href="cv/cv.pdf">Read my CV</a>
+        <img alt="me" class="rounded-t-lg w-full h-full" src="icons/me.png"/>
+        <a class=" text-lg lg:text-2xl w-full hover:p-4 p-2 rounded-b-lg text-center hover:underline duration-200 dark:bg-slate-100 bg-zinc-900  text-white dark:text-zinc-800" target="_blank" href="cv/cv.pdf">Read my CV</a>
 
     </div> 
     <div class="lg:w-1/2 w-full scale-90 -mt-20 lg:-mt-10">

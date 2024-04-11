@@ -1,28 +1,11 @@
 [
   {
-    "title": "Class Bank Fund Manager",
-    "description": "Developed an application for managing class funds during high school. It helped keep track of money and expenses easily.",
-    "tech_stack": ["C#", "UWP", "XAML"],
-    "link": "https://github.com/wpsimon09/RocnikovyProjekt-SPSE-BANK",
-    "link_deployement": "",
-    "image" : ["projects/spse-bank.png"]
-  },
-  {
-    "title": "Curious Village",
-    "description": "Created an educational game to teach children about internet safety. It won first place in class. The game helps kids learn not to share personal information online.",
-    "tech_stack": ["TypeScript", "OOP", "Canvas"],
-    "link": "https://github.com/HZ-2223/oop-team22",
-    "link_deployement":"https://hz-2223.github.io/oop-team22/",
-    "image" : ["projects/curious-village.png"]
-
-  },
-  {
-    "title": "Ligplatsen Zeeland",
-    "description": "Built a web application where people can browse and rent parking spaces for their boats.",
-    "tech_stack": ["Laravel", "JavaScript", "PHP", "MySQL", "SSH", "Authentification"],
-    "link": "",
-    "link_deployement":"https://ligplaatsenzeeland.nl/" ,
-    "image" : ["projects/boat-parking.png"]
+    "title": "Hangout Safari",
+    "description": "Designed a web application to help students socialize and overcome social anxiety. It features a 3D interactive safari where you collect animals based on the number of social events attended.",
+    "tech_stack": ["Three.js", "SvelteKit", "Microservices", "Supabase", "Docker"],
+    "link": "https://github.com/HangoutSafari/Hangout-Safari",
+    "link_deployement":"",
+    "image" : ["projects/safari.png"]
   },
   {
     "title": "Pablo Rendering Engine",
@@ -33,12 +16,20 @@
     "image" : ["projects/pablo.png"]
   },
   {
-    "title": "Hangout Safari",
-    "description": "Designed a web application to help students socialize and overcome social anxiety. It features a 3D interactive safari where you collect animals based on the number of social events attended.",
-    "tech_stack": ["Three.js", "SvelteKit", "Microservices", "Supabase", "Docker"],
-    "link": "https://github.com/HangoutSafari/Hangout-Safari",
-    "link_deployement":"",
-    "image" : ["projects/safari.png"]
+    "title": "Ligplatsen Zeeland",
+    "description": "Built a web application where people can browse and rent parking spaces for their boats.",
+    "tech_stack": ["Laravel", "JavaScript", "PHP", "MySQL", "SSH", "Authentification"],
+    "link": "",
+    "link_deployement":"https://ligplaatsenzeeland.nl/" ,
+    "image" : ["projects/boat-parking.png"]
+  },
+  {
+    "title": "Workshop about graphics programming",
+    "description": "During the We Are in IT Together conference organized by HZ University of Applied Sciences, I had an opportunity to teach a workshop where participants could learn what it takes to create interactive applications or game engines. The workshop covered basic topics such as rendering pipeline, buffers, graphics APIs, shading models, and more. Attendance reached the maximum amount of participants and harvested great success.    ",
+    "tech_stack": ["C++", "GLSL", "OpenGL", "Computer graphics", "Teaching"],
+    "link":"https://github.com/wpsimon09/OpenGL-Workshop",
+    "link_deployement" : "presentations/presentation.pdf",
+    "image" : ["projects/workshop.jpg"]
   },
   {
     "title": "Screen Saver for Giant Screen",
@@ -49,11 +40,20 @@
     "image" : ["projects/hack.jpg"]
   },
   {
-    "title": "Workshop about graphics programming",
-    "description": "During the We Are in IT Together conference organized by HZ University of Applied Sciences, I had an opportunity to teach a workshop where participants could learn what it takes to create interactive applications or game engines. The workshop covered basic topics such as rendering pipeline, buffers, graphics APIs, shading models, and more. Attendance reached the maximum amount of participants and harvested great success.    ",
-    "tech_stack": ["C++", "GLSL", "OpenGL", "Computer graphics", "Teaching"],
-    "link":"https://github.com/wpsimon09/OpenGL-Workshop",
-    "link_deployement" : "presentations/presentation.pdf",
-    "image" : ["projects/workshop.jpg"]
+    "title": "Curious Village",
+    "description": "Created an educational game to teach children about internet safety. It won first place in class. The game helps kids learn not to share personal information online.",
+    "tech_stack": ["TypeScript", "OOP", "Canvas"],
+    "link": "https://github.com/HZ-2223/oop-team22",
+    "link_deployement":"https://hz-2223.github.io/oop-team22/",
+    "image" : ["projects/curious-village.png"]
+    
+  },
+  {
+    "title": "Class Bank Fund Manager",
+    "description": "Developed an application for managing class funds during high school. It helped keep track of money and expenses easily.",
+    "tech_stack": ["C#", "UWP", "XAML"],
+    "link": "https://github.com/wpsimon09/RocnikovyProjekt-SPSE-BANK",
+    "link_deployement": "",
+    "image" : ["projects/spse-bank.png"]
   }
 ]
