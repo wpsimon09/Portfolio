@@ -29,7 +29,7 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <button
-	class="rounded-full p-5 w-40 h-40 flex flex-col items-center justify-center shadow-2xl hover:w-48 hover:h-48 hover:bg-zinc-100 bg-slate-200  duration-150"
+	class="rounded-full p-5 w-20 h-20 lg:w-40 lg:h-40 flex flex-col items-center justify-center shadow-2xl hover:w-28 hover:h-28 lg:hover:w-48 lg:hover:h-48 hover:bg-zinc-100 bg-slate-200  duration-150"
 	style="{offset};{scale}"
 	on:click={()=>{
 		dispatch('skillClicked',{

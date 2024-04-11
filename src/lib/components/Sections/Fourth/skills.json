@@ -88,5 +88,15 @@
         "src": "skills/rendering.png",
         "name": "Computer Graphics & Graphics Programming",
         "description": "Field of study and practice focused on creating images, diagrams, and animations using computers."
+    },
+    {
+        "src": "skills/unity.png",
+        "name": "Unity Game Engine",
+        "description": "A versatile game development engine enabling creation of interactive cross-platform experiences."
+    },
+    {
+        "src": "skills/blender.png",
+        "name": "Blender",
+        "description": "Powerful 3D creation software for modeling, animation, rendering, and more."
     }
 ]

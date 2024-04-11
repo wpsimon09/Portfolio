@@ -11,6 +11,8 @@
 	if(browser){
 		if (window.screen.width < 700) {
 			//for phone
+			trashold_in = 2300
+			trahsold_out = 2600
 			
 		} else {
 			//for desktop

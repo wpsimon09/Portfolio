@@ -40,15 +40,15 @@
         <ProjectShow on:click={()=>{isProjectVisible = false}} project = {selectedProject} />
     {/if}
   
-    <section class="w-full h-[100vh] flex flex-col items-center snap-start">
+    <section class="w-full h-screen flex flex-col items-center snap-start">
         <FirstSection/>
     </section> 
     
-    <section class="w-full lg:h-[100vh] flex flex-col items-center lg:snap-center">
+    <section class="w-full lg:h-screen flex flex-col items-center lg:snap-center">
         <SecondSection y={y}/>
     </section> 
 
-    <section class="w-full lg:h-[100vh] flex flex-col items-center snap-start">
+    <section class="w-full lg:h-screen flex flex-col items-center snap-start">
         <Fourth y={y}/>
     </section> 
     
