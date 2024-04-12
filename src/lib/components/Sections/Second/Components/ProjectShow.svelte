@@ -30,7 +30,7 @@
 			<div class="h-0.5 bg-zinc-800 text-slate-100 dark:bg-slate-50 w-60 lg:w-80 mt-4 dark:text-zinc-800">
 				s
 			</div>
-			<div class="flex flex-col items-center w-[90%] h-[60%] mt-5 overflow-y-auto ">
+			<div class="flex flex-col items-center w-[90%] h-[60%] lg:h-[70%] mt-5 overflow-y-auto ">
 				<div class="flex flex-row gap-10 mt-4 items-center justify-between">
 					<a href={project.link} target="_blank">
 						<img
