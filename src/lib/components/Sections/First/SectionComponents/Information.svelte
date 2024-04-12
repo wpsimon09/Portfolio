@@ -8,7 +8,7 @@
                 WELCOME
         </h1>
         <p class="text-slate-100 font-capriola drop-shadow-2xl text-sm lg:text-lg">My name is Simon, the software developer</p>
-        <div class="flex items-center self-center scale-50">
+        <div class="flex items-center self-center scale-50 hover:scale-75 duration-100">
                 <a href="https://github.com/wpsimon09">
                         <svg
                                 width="98"

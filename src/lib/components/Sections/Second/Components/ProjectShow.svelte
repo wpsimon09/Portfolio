@@ -9,7 +9,7 @@
 <div
 	transition:scale={{ delay: 10, duration: 500, easing: quintOut, axis: 'y' }}
 	on:click
-	class=" w-screen h-screen fixed flex flex-col items-center backdrop-blur-xl bg-slate-200 dark:bg-zinc-600 justify-center bg-opacity-15 z-[97] shadow-2xl"
+	class=" w-screen h-screen fixed flex flex-col items-center backdrop-blur-xl bg-slate-200 dark:bg-zinc-600 justify-center bg-opacity-15 z-[99] shadow-2xl"
 >
 	<div
 		class="w-[90%] lg:w-1/2 h-[85%]  flex flex-col items-center bg-slate-100 dark:bg-zinc-800 shadow-2xl rounded-xl z-[98]"

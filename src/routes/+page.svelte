@@ -13,7 +13,6 @@
 
 
     let y = 20;
-    console.log(y);
 
     onMount(()=>{
         if(browser){
@@ -40,27 +39,27 @@
         <ProjectShow on:click={()=>{isProjectVisible = false}} project = {selectedProject} />
     {/if}
   
-    <section class="w-full h-screen flex flex-col items-center snap-start">
+    <section class="zinc-100 dark:bg-zinc-800 w-full h-full flex flex-col items-center snap-start">
         <FirstSection/>
     </section> 
     
-    <section class="w-full lg:h-screen flex flex-col items-center lg:snap-center">
+    <section class="w-full lg:h-full zinc-100 dark:bg-zinc-800 flex flex-col items-center snap-center">
         <SecondSection y={y}/>
     </section> 
 
-    <section class="w-full lg:h-screen flex flex-col items-center snap-start">
+    <section class="w-full lg:h-full flex flex-col zinc-100 dark:bg-zinc-800 items-center snap-start">
         <Fourth y={y}/>
     </section> 
     
-    <section class="w-full  flex flex-col items-center snap-start">
+    <section class="w-full flex flex-col items-center snap-start zinc-100 dark:bg-zinc-800">
         <Third on:onProjectShow={handleProjectShowEvent} y={y}/>        
     </section>
     
 
-    <section class="w-full  flex flex-col items-center snap-start">
+    <section class="w-full flex flex-col items-center snap-start">
         <Footer on:click={()=>creditsVisible ? creditsVisible = false : creditsVisible = true}/>
             {#if creditsVisible}
-                <div transition:slide={{ delay: 20, duration: 300, easing: quintOut, axis: 'y' }} class = "flex flex-col items-center  justify-center w-40 h-20 absolute backdrop:blur-2xl">
+                <div transition:slide={{ delay: 20, duration: 300, easing: quintOut, axis: 'y' }} class = "flex flex-col items-center z-[90] justify-center w-40 h-20 absolute backdrop:blur-2xl">
                     <a href="https://sketchfab.com/CapAlatriste" class="underline text-white"> 3D model </a>
                     <a href="https://www.flaticon.com/" class="underline text-white"> Icons </a>
                 </div>
