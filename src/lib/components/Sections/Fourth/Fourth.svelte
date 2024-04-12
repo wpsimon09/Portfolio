@@ -48,9 +48,9 @@
 		{/if}
 		<div class="w-screen h-full flex flex-col items-center justify-center">
 			{#if y>trashold_in && y<trahsold_out}	
-				<div transition:blur={{ amount: 10 }} class="h-80 w-[90%] pl-7 gap-6 flex flex-row items-center overflow-x-auto">
+				<div transition:blur={{ amount: 10 }} class="h-80 w-[90%] pl-7 gap-6 flex flex-row items-center overflow-x-auto snap-x snap-mandatory">
 					{#each skills as skill, i}
-						<div>
+						<div class="snap-center">
 							<Skill on:skillClicked={skillSelected} index={i} _skill={skill} />
 						</div>
 					{/each}
