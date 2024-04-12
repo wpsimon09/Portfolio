@@ -10,7 +10,7 @@
 		for (let i = 0; i < projects.length; i++) {
 			if (window.screen.width < 700) {
 				//for phone
-				trasholds.push(2890 + 250 * i);
+				trasholds.push(2890 + 210 * i);
 			} else {
 				//for desktop
 				trasholds.push(2140 + 250 * i);

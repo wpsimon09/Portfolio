@@ -9,7 +9,7 @@
 <div
 	transition:scale={{ delay: 10, duration: 500, easing: quintOut, axis: 'y' }}
 	on:click
-	class=" w-screen h-screen fixed flex flex-col items-center backdrop-blur-xl bg-slate-200 dark:bg-zinc-600 justify-center bg-opacity-15 z-[99] shadow-2xl"
+	class=" w-screen h-screen fixed flex flex-col items-center backdrop-blur-xl bg-slate-200 dark:bg-zinc-600 lg:justify-center bg-opacity-15 z-[99] shadow-2xl"
 >
 	<div
 		class="w-[90%] lg:w-1/2 h-[85%]  flex flex-col items-center bg-slate-100 dark:bg-zinc-800 shadow-2xl rounded-xl z-[98]"
@@ -30,7 +30,7 @@
 			<div class="h-0.5 bg-zinc-800 text-slate-100 dark:bg-slate-50 w-60 lg:w-80 mt-4 dark:text-zinc-800">
 				s
 			</div>
-			<div class="flex flex-col items-center w-[90%] h-[70%] mt-5 overflow-y-auto ">
+			<div class="flex flex-col items-center w-[90%] h-[60%] mt-5 overflow-y-auto ">
 				<div class="flex flex-row gap-10 mt-4 items-center justify-between">
 					<a href={project.link} target="_blank">
 						<img
