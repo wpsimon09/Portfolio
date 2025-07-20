@@ -38,8 +38,9 @@ declare module '$env/static/private' {
 	export const HISTCONTROL: string;
 	export const XDG_MENU_PREFIX: string;
 	export const TERM_PROGRAM_VERSION: string;
-	export const HOSTNAME: string;
+	export const PTYXIS_PROFILE: string;
 	export const HISTSIZE: string;
+	export const HOSTNAME: string;
 	export const NODE: string;
 	export const SSH_AUTH_SOCK: string;
 	export const MEMORY_PRESSURE_WRITE: string;
@@ -49,10 +50,11 @@ declare module '$env/static/private' {
 	export const DESKTOP_SESSION: string;
 	export const NO_AT_BRIDGE: string;
 	export const npm_config_globalconfig: string;
+	export const GPG_TTY: string;
 	export const EDITOR: string;
 	export const PWD: string;
-	export const XDG_SESSION_DESKTOP: string;
 	export const LOGNAME: string;
+	export const XDG_SESSION_DESKTOP: string;
 	export const XDG_SESSION_TYPE: string;
 	export const npm_config_init_module: string;
 	export const SYSTEMD_EXEC_PID: string;
@@ -68,6 +70,7 @@ declare module '$env/static/private' {
 	export const XDG_CURRENT_DESKTOP: string;
 	export const npm_package_version: string;
 	export const MEMORY_PRESSURE_WATCH: string;
+	export const VTE_VERSION: string;
 	export const WAYLAND_DISPLAY: string;
 	export const GIT_ASKPASS: string;
 	export const INVOCATION_ID: string;
@@ -75,6 +78,7 @@ declare module '$env/static/private' {
 	export const INIT_CWD: string;
 	export const CHROME_DESKTOP: string;
 	export const npm_lifecycle_script: string;
+	export const MOZ_GMP_PATH: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const GNOME_SETUP_DISPLAY: string;
 	export const npm_config_npm_version: string;
@@ -97,6 +101,7 @@ declare module '$env/static/private' {
 	export const XDG_RUNTIME_DIR: string;
 	export const DEBUGINFOD_URLS: string;
 	export const npm_package_json: string;
+	export const DEBUGINFOD_IMA_CERT_PATH: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const JOURNAL_STREAM: string;
 	export const XDG_DATA_DIRS: string;
@@ -109,11 +114,12 @@ declare module '$env/static/private' {
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const npm_config_python: string;
 	export const npm_config_global_prefix: string;
+	export const npm_config_update_notifier: string;
 	export const MAIL: string;
-	export const GIO_LAUNCHED_DESKTOP_FILE_PID: string;
+	export const PTYXIS_VERSION: string;
 	export const npm_node_execpath: string;
 	export const npm_config_engine_strict: string;
-	export const GIO_LAUNCHED_DESKTOP_FILE: string;
+	export const FLATPAK_TTY_PROGRESS: string;
 	export const OLDPWD: string;
 	export const TERM_PROGRAM: string;
 	export const NODE_ENV: string;
@@ -160,8 +166,9 @@ declare module '$env/dynamic/private' {
 		HISTCONTROL: string;
 		XDG_MENU_PREFIX: string;
 		TERM_PROGRAM_VERSION: string;
-		HOSTNAME: string;
+		PTYXIS_PROFILE: string;
 		HISTSIZE: string;
+		HOSTNAME: string;
 		NODE: string;
 		SSH_AUTH_SOCK: string;
 		MEMORY_PRESSURE_WRITE: string;
@@ -171,10 +178,11 @@ declare module '$env/dynamic/private' {
 		DESKTOP_SESSION: string;
 		NO_AT_BRIDGE: string;
 		npm_config_globalconfig: string;
+		GPG_TTY: string;
 		EDITOR: string;
 		PWD: string;
-		XDG_SESSION_DESKTOP: string;
 		LOGNAME: string;
+		XDG_SESSION_DESKTOP: string;
 		XDG_SESSION_TYPE: string;
 		npm_config_init_module: string;
 		SYSTEMD_EXEC_PID: string;
@@ -190,6 +198,7 @@ declare module '$env/dynamic/private' {
 		XDG_CURRENT_DESKTOP: string;
 		npm_package_version: string;
 		MEMORY_PRESSURE_WATCH: string;
+		VTE_VERSION: string;
 		WAYLAND_DISPLAY: string;
 		GIT_ASKPASS: string;
 		INVOCATION_ID: string;
@@ -197,6 +206,7 @@ declare module '$env/dynamic/private' {
 		INIT_CWD: string;
 		CHROME_DESKTOP: string;
 		npm_lifecycle_script: string;
+		MOZ_GMP_PATH: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		GNOME_SETUP_DISPLAY: string;
 		npm_config_npm_version: string;
@@ -219,6 +229,7 @@ declare module '$env/dynamic/private' {
 		XDG_RUNTIME_DIR: string;
 		DEBUGINFOD_URLS: string;
 		npm_package_json: string;
+		DEBUGINFOD_IMA_CERT_PATH: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
 		JOURNAL_STREAM: string;
 		XDG_DATA_DIRS: string;
@@ -231,11 +242,12 @@ declare module '$env/dynamic/private' {
 		DBUS_SESSION_BUS_ADDRESS: string;
 		npm_config_python: string;
 		npm_config_global_prefix: string;
+		npm_config_update_notifier: string;
 		MAIL: string;
-		GIO_LAUNCHED_DESKTOP_FILE_PID: string;
+		PTYXIS_VERSION: string;
 		npm_node_execpath: string;
 		npm_config_engine_strict: string;
-		GIO_LAUNCHED_DESKTOP_FILE: string;
+		FLATPAK_TTY_PROGRESS: string;
 		OLDPWD: string;
 		TERM_PROGRAM: string;
 		NODE_ENV: string;
