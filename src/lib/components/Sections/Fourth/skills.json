@@ -5,44 +5,14 @@
         "description": "General-purpose programming language known for its performance and versatility."
     },
     {
-        "src": "skills/git.png",
-        "name": "Git",
-        "description": "Version control system used for tracking changes in source code during software development."
+        "src": "skills/vulkan.png",
+        "name": "Vulkan",
+        "description": "Low-overhead, cross-platform graphics and compute API designed for high-efficiency rendering and GPU acceleration."
     },
     {
-        "src": "skills/laravel.png",
-        "name": "Laravel",
-        "description": "PHP framework for building web applications following the MVC pattern."
-    },
-    {
-        "src": "skills/oop.png",
-        "name": "Object-Oriented Programming",
-        "description": "Paradigm for organizing and structuring software around objects and classes."
-    },
-    {
-        "src": "skills/svelte.png",
-        "name": "Svelte",
-        "description": "JavaScript framework for building reactive web applications with a focus on simplicity and performance."
-    },
-    {
-        "src": "skills/uwp.png",
-        "name": "Universal Windows Platform (UWP)",
-        "description": "Framework for building Windows apps that run across all devices running Windows 10."
-    },
-    {
-        "src": "skills/cs.png",
-        "name": "C#",
-        "description": "Object-oriented programming language developed by Microsoft, widely used for building Windows applications."
-    },
-    {
-        "src": "skills/java.png",
-        "name": "Java",
-        "description": "Popular programming language known for its portability, security, and scalability."
-    },
-    {
-        "src": "skills/linux.png",
-        "name": "Linux",
-        "description": "Open-source operating system kernel used in a wide variety of computing devices."
+        "src": "skills/slang.png",
+        "name": "Slang",
+        "description": "A shading language and compiler framework for advanced real-time graphics, enabling modular and extensible GPU programming."
     },
     {
         "src": "skills/opengl.png",
@@ -50,9 +20,39 @@
         "description": "Cross-platform API for rendering 2D and 3D graphics."
     },
     {
-        "src": "skills/tailwind.png",
-        "name": "Tailwind CSS",
-        "description": "Utility-first CSS framework for building custom designs quickly and easily."
+        "src": "skills/rendering.png",
+        "name": "Computer Graphics & Graphics Programming",
+        "description": "Field of study and practice focused on creating images, diagrams, and animations using computers."
+    },
+    {
+        "src": "skills/unreal.png",
+        "name": "Unreal Engine",
+        "description": "High-performance game engine used for real-time 3D creation, including games, films, and virtual production."
+    },
+    {
+        "src": "skills/unity.png",
+        "name": "Unity Game Engine",
+        "description": "A versatile game development engine enabling creation of interactive cross-platform experiences."
+    },
+    {
+        "src": "skills/blender.png",
+        "name": "Blender",
+        "description": "Powerful 3D creation software for modeling, animation, rendering, and more."
+    },
+    {
+        "src": "skills/nsight.jpg",
+        "name": "NVIDIA Nsight",
+        "description": "Comprehensive suite of GPU debugging and profiling tools for analyzing performance and diagnosing issues in graphics and compute applications using Vulkan, Direct3D, CUDA, and OpenGL."
+    },
+    {
+        "src": "skills/cs.png",
+        "name": "C#",
+        "description": "Object-oriented programming language developed by Microsoft, widely used for building Windows applications."
+    },
+    {
+        "src": "skills/uwp.png",
+        "name": "Universal Windows Platform (UWP)",
+        "description": "Framework for building Windows apps that run across all devices running Windows 10."
     },
     {
         "src": "skills/xaml.png",
@@ -60,9 +60,19 @@
         "description": "Declarative XML-based language used to initialize structured values and objects."
     },
     {
-        "src": "skills/docker.png",
-        "name": "Docker",
-        "description": "Platform for developing, shipping, and running applications in containers."
+        "src": "skills/git.png",
+        "name": "Git",
+        "description": "Version control system used for tracking changes in source code during software development."
+    },
+    {
+        "src": "skills/linux.png",
+        "name": "Linux",
+        "description": "Open-source operating system kernel used in a wide variety of computing devices."
+    },
+    {
+        "src": "skills/threejs.png",
+        "name": "Three.js",
+        "description": "JavaScript library for creating and displaying animated 3D computer graphics in a web browser."
     },
     {
         "src": "skills/js.png",
@@ -75,28 +85,38 @@
         "description": "JavaScript runtime built on Chrome's V8 JavaScript engine for building scalable network applications."
     },
     {
+        "src": "skills/svelte.png",
+        "name": "Svelte",
+        "description": "JavaScript framework for building reactive web applications with a focus on simplicity and performance."
+    },
+    {
+        "src": "skills/tailwind.png",
+        "name": "Tailwind CSS",
+        "description": "Utility-first CSS framework for building custom designs quickly and easily."
+    },
+    {
+        "src": "skills/java.png",
+        "name": "Java",
+        "description": "Popular programming language known for its portability, security, and scalability."
+    },
+    {
         "src": "skills/php.png",
         "name": "PHP",
         "description": "Server-side scripting language designed for web development, commonly used for creating dynamic web pages."
     },
     {
-        "src": "skills/threejs.png",
-        "name": "Three.js",
-        "description": "JavaScript library for creating and displaying animated 3D computer graphics in a web browser."
+        "src": "skills/laravel.png",
+        "name": "Laravel",
+        "description": "PHP framework for building web applications following the MVC pattern."
     },
     {
-        "src": "skills/rendering.png",
-        "name": "Computer Graphics & Graphics Programming",
-        "description": "Field of study and practice focused on creating images, diagrams, and animations using computers."
+        "src": "skills/oop.png",
+        "name": "Object-Oriented Programming",
+        "description": "Paradigm for organizing and structuring software around objects and classes."
     },
     {
-        "src": "skills/unity.png",
-        "name": "Unity Game Engine",
-        "description": "A versatile game development engine enabling creation of interactive cross-platform experiences."
-    },
-    {
-        "src": "skills/blender.png",
-        "name": "Blender",
-        "description": "Powerful 3D creation software for modeling, animation, rendering, and more."
+        "src": "skills/docker.png",
+        "name": "Docker",
+        "description": "Platform for developing, shipping, and running applications in containers."
     }
 ]

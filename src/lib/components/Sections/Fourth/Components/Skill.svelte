@@ -1,11 +1,15 @@
 <script>
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
-	import {createEventDispatcher} from 'svelte';
-
+	import { createEventDispatcher } from 'svelte';
 	export let _skill;
 
 	let offset;
+
+	const handleNextClick = () => {
+		carousel.goToNext();
+	};
+
 	export let index;
 	function calculateEffect(i) {
 		let marginFactor = Math.random() * 3 + 1;
@@ -21,23 +25,21 @@
 	offset = calculateEffect(index);
 	let scale = calculateScale(index);
 
-  	const dispatch = createEventDispatcher();
-
-    	
+	const dispatch = createEventDispatcher();
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <button
-	class="rounded-full p-5 w-20 h-20 lg:w-40 lg:h-40 flex flex-col items-center justify-center shadow-2xl hover:w-28 hover:h-28 lg:hover:w-48 lg:hover:h-48 hover:bg-zinc-100 bg-slate-200  duration-150"
+	class="rounded-full p-5 w-20 h-20 lg:w-40 lg:h-40 flex flex-col items-center justify-center shadow-2xl hover:w-28 hover:h-28 lg:hover:w-48 lg:hover:h-48 hover:bg-zinc-100 bg-slate-200 duration-150"
 	style="{offset};{scale}"
-	on:click={()=>{
-		dispatch('skillClicked',{
-			skill:_skill
+	on:click={() => {
+		dispatch('skillClicked', {
+			skill: _skill
 		});
 	}}
 >
-<div class="h-30 w-30 flex flex-col items-center justify-center rounded-full">
-	<img class="h-30 w-30 object-scale-down rounded-full" src={_skill.src} alt="skill"/>
-</div>
+	<div class="h-30 w-30 flex flex-col items-center justify-center rounded-full">
+		<img class="h-30 w-30 object-scale-down rounded-full" src={_skill.src} alt="skill" />
+	</div>
 </button>

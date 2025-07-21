@@ -30,7 +30,6 @@ declare module '$env/static/private' {
 	export const npm_command: string;
 	export const LSCOLORS: string;
 	export const SESSION_MANAGER: string;
-	export const USER_ZDOTDIR: string;
 	export const npm_config_userconfig: string;
 	export const COLORTERM: string;
 	export const npm_config_cache: string;
@@ -49,6 +48,7 @@ declare module '$env/static/private' {
 	export const DESKTOP_SESSION: string;
 	export const NO_AT_BRIDGE: string;
 	export const npm_config_globalconfig: string;
+	export const GPG_TTY: string;
 	export const EDITOR: string;
 	export const PWD: string;
 	export const XDG_SESSION_DESKTOP: string;
@@ -59,7 +59,7 @@ declare module '$env/static/private' {
 	export const _: string;
 	export const XAUTHORITY: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
-	export const VSCODE_INJECTION: string;
+	export const GJS_DEBUG_TOPICS: string;
 	export const GDM_LANG: string;
 	export const HOME: string;
 	export const USERNAME: string;
@@ -75,6 +75,8 @@ declare module '$env/static/private' {
 	export const INIT_CWD: string;
 	export const CHROME_DESKTOP: string;
 	export const npm_lifecycle_script: string;
+	export const GJS_DEBUG_OUTPUT: string;
+	export const MOZ_GMP_PATH: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const GNOME_SETUP_DISPLAY: string;
 	export const npm_config_npm_version: string;
@@ -83,7 +85,6 @@ declare module '$env/static/private' {
 	export const npm_package_name: string;
 	export const ZSH: string;
 	export const npm_config_prefix: string;
-	export const ZDOTDIR: string;
 	export const LESSOPEN: string;
 	export const USER: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
@@ -97,6 +98,7 @@ declare module '$env/static/private' {
 	export const XDG_RUNTIME_DIR: string;
 	export const DEBUGINFOD_URLS: string;
 	export const npm_package_json: string;
+	export const DEBUGINFOD_IMA_CERT_PATH: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const JOURNAL_STREAM: string;
 	export const XDG_DATA_DIRS: string;
@@ -109,6 +111,7 @@ declare module '$env/static/private' {
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const npm_config_python: string;
 	export const npm_config_global_prefix: string;
+	export const npm_config_update_notifier: string;
 	export const MAIL: string;
 	export const GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 	export const npm_node_execpath: string;
@@ -152,7 +155,6 @@ declare module '$env/dynamic/private' {
 		npm_command: string;
 		LSCOLORS: string;
 		SESSION_MANAGER: string;
-		USER_ZDOTDIR: string;
 		npm_config_userconfig: string;
 		COLORTERM: string;
 		npm_config_cache: string;
@@ -171,6 +173,7 @@ declare module '$env/dynamic/private' {
 		DESKTOP_SESSION: string;
 		NO_AT_BRIDGE: string;
 		npm_config_globalconfig: string;
+		GPG_TTY: string;
 		EDITOR: string;
 		PWD: string;
 		XDG_SESSION_DESKTOP: string;
@@ -181,7 +184,7 @@ declare module '$env/dynamic/private' {
 		_: string;
 		XAUTHORITY: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
-		VSCODE_INJECTION: string;
+		GJS_DEBUG_TOPICS: string;
 		GDM_LANG: string;
 		HOME: string;
 		USERNAME: string;
@@ -197,6 +200,8 @@ declare module '$env/dynamic/private' {
 		INIT_CWD: string;
 		CHROME_DESKTOP: string;
 		npm_lifecycle_script: string;
+		GJS_DEBUG_OUTPUT: string;
+		MOZ_GMP_PATH: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		GNOME_SETUP_DISPLAY: string;
 		npm_config_npm_version: string;
@@ -205,7 +210,6 @@ declare module '$env/dynamic/private' {
 		npm_package_name: string;
 		ZSH: string;
 		npm_config_prefix: string;
-		ZDOTDIR: string;
 		LESSOPEN: string;
 		USER: string;
 		VSCODE_GIT_IPC_HANDLE: string;
@@ -219,6 +223,7 @@ declare module '$env/dynamic/private' {
 		XDG_RUNTIME_DIR: string;
 		DEBUGINFOD_URLS: string;
 		npm_package_json: string;
+		DEBUGINFOD_IMA_CERT_PATH: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
 		JOURNAL_STREAM: string;
 		XDG_DATA_DIRS: string;
@@ -231,6 +236,7 @@ declare module '$env/dynamic/private' {
 		DBUS_SESSION_BUS_ADDRESS: string;
 		npm_config_python: string;
 		npm_config_global_prefix: string;
+		npm_config_update_notifier: string;
 		MAIL: string;
 		GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 		npm_node_execpath: string;
