@@ -1,6 +1,27 @@
 [
   {
+    "title": "Vulkan-RTX",
+    "preview": "Real-time Vulkan renderer with rasterization and path tracing support.",
+    "description": "A real-time physically based renderer using Vulkan with support for both classic rasterization and hardware-accelerated path tracing via the RayTracingPipeline. Features include forward rendering, real-time path tracing with RT cores, pixel-perfect ray-traced shadows, scene editing with gizmos, and material customization. It supports large-scale homogenus paricipating media rendering and uses a modern Vulkan-based architecture with Slang shaders, SPIR-V reflection, and multi-threaded texture loading.",
+    "tech_stack": [
+      "Vulkan API",
+      "C++",
+      "Slang",
+      "glm",
+      "Dear ImGui"
+    ],
+    "link": "https://github.com/wpsimon09/Vulkan-RTX",
+    "link_deployement": "",
+    "image": [
+      "projects/vulkan-rtx-0.png",
+      "projects/vulkan-rtx-1.png",
+      "projects/vulkan-rtx-2.png"
+    ],
+    "job": false
+  },
+  {
     "title": "Slang in wild",
+    "preview": "A web app showcasing open-source projects that use the Slang shading language.",
     "description": "A small, self-hosted app that lists open-source projects using the Slang shading language, aiming to improve discoverability and learning resources for this emerging GPU programming tool.",
     "tech_stack": [
       "SvelteKit",
@@ -11,11 +32,13 @@
     "link_deployement": "https://slang-in-wild.com",
     "image": [
       "projects/slang-in-wild.png"
-    ]
+    ],
+    "job": false
   },
   {
     "title": "Virtual Anatomy",
-    "description": "Developed an interactive human anatomy visualization tool using Unreal Engine to help students explore anatomy from any angle. Optimized a 46-million triangle model with 2GB of textures for real-time use, reducing render time from 20ms/frame to 8ms/frame. Added simulation features like heartbeat-synced blood flow using Niagara, animated rib cage movement, and a custom UI with tree view and simulation controls. Created maintainable code and detailed MkDocs documentation hosted as a website.",
+    "preview": "An Unreal Engine app to visualize and interact with human anatomy in real-time.",
+    "description": "During my internship in Joint reserach center Zeeland I developed an interactive human anatomy visualization tool using Unreal Engine to help students explore anatomy from any angle. Optimized a 46-million triangle model with 2GB of textures for real-time use, reducing render time from 20ms/frame to 8ms/frame. Added simulation features like heartbeat-synced blood flow using Niagara, animated rib cage movement, and a custom UI with tree view and simulation controls. Created maintainable code and detailed MkDocs documentation hosted as a website.",
     "tech_stack": [
       "Unreal Engine",
       "Niagara",
@@ -28,10 +51,12 @@
     "image": [
       "projects/virtual-anatomy-0.jpg",
       "projects/virtual-anatomy-1.jpg"
-    ]
+    ],
+    "job": false
   },
   {
     "title": "Hangout Safari",
+    "preview": "A gamified web platform that encourages students to socialize through event-based animal collection.",
     "description": "Designed a web application to help students socialize and overcome social anxiety. It features a 3D interactive safari where you collect animals based on the number of social events attended.",
     "tech_stack": [
       "Three.js",
@@ -44,10 +69,12 @@
     "link_deployement": "",
     "image": [
       "projects/safari.png"
-    ]
+    ],
+    "job": false
   },
   {
     "title": "Pablo Rendering Engine",
+    "preview": "A custom-built OpenGL renderer supporting PBR, IBL, and model loading.",
     "description": "A personal project where I developed a rendering engine and OpenGL framework from scratch. The engine supports features like physics-based rendering, image-based lighting, and model loading.",
     "tech_stack": [
       "C++",
@@ -62,10 +89,12 @@
       "projects/pablo-0.png",
       "projects/pablo-1.png",
       "projects/pablo-2.png"
-    ]
+    ],
+    "job": false
   },
   {
     "title": "Ligplatsen Zeeland",
+    "preview": "A Laravel-based platform for booking and managing boat parking spaces.",
     "description": "Built a web application where people can browse and rent parking spaces for their boats.",
     "tech_stack": [
       "Laravel",
@@ -79,11 +108,13 @@
     "link_deployement": "https://ligplaatsenzeeland.nl/",
     "image": [
       "projects/boat-parking.png"
-    ]
+    ],
+    "job": false
   },
   {
     "title": "Workshop about graphics programming",
-    "description": "During the We Are in IT Together conference organized by HZ University of Applied Sciences, I had an opportunity to teach a workshop where participants could learn what it takes to create interactive applications or game engines. The workshop covered basic topics such as rendering pipeline, buffers, graphics APIs, shading models, and more. Attendance reached the maximum amount of participants and harvested great success.    ",
+    "preview": "Led a workshop teaching the basics of real-time rendering and game engine architecture.",
+    "description": "During the We Are in IT Together conference organized by HZ University of Applied Sciences, I had an opportunity to teach a workshop where participants could learn what it takes to create interactive applications or game engines. The workshop covered basic topics such as rendering pipeline, buffers, graphics APIs, shading models, and more. Attendance reached the maximum amount of participants and harvested great success.",
     "tech_stack": [
       "C++",
       "GLSL",
@@ -95,10 +126,12 @@
     "link_deployement": "presentations/presentation.pdf",
     "image": [
       "projects/workshop.jpg"
-    ]
+    ],
+    "job": false
   },
   {
     "title": "Screen Saver for Giant Screen",
+    "preview": "An interactive screen saver that responds to sound and displays animations on a massive display.",
     "description": "During a hackathon for the Joint Research Center Zeeland, we created a screen saver for one of the biggest screens in the Netherlands. It displayed a glowing sphere that expanded based on clapping sounds. Also showed animated models of different institutions.",
     "tech_stack": [
       "Unity",
@@ -109,10 +142,12 @@
     "link_deployement": "",
     "image": [
       "projects/hack.jpg"
-    ]
+    ],
+    "job": false
   },
   {
     "title": "Curious Village",
+    "preview": "An award-winning educational game that teaches children about online safety.",
     "description": "Created an educational game to teach children about internet safety. It won first place in class. The game helps kids learn not to share personal information online.",
     "tech_stack": [
       "TypeScript",
@@ -123,10 +158,12 @@
     "link_deployement": "https://hz-2223.github.io/oop-team22/",
     "image": [
       "projects/curious-village.png"
-    ]
+    ],
+    "job": false
   },
   {
     "title": "Class Bank Fund Manager",
+    "preview": "A desktop app for tracking class finances, built during high school.",
     "description": "Developed an application for managing class funds during high school. It helped keep track of money and expenses easily.",
     "tech_stack": [
       "C#",
@@ -137,6 +174,7 @@
     "link_deployement": "",
     "image": [
       "projects/spse-bank.png"
-    ]
+    ],
+    "job": false
   }
 ]

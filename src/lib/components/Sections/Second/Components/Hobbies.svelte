@@ -5,7 +5,7 @@
 	// @ts-nocheck
 	export let y;
 	export let trashold;
-	export let scrollOutThrahsold;
+	export const scrollOutThrahsold = 20;
 
 	let hobbies = [
 		{

@@ -38,14 +38,23 @@
 					class="h-0.5 bg-zinc-800 text-slate-100 dark:bg-slate-50 w-full lg:w-full mt-4 dark:text-zinc-800"
 				></div>
 
+				<a class="my-4" href={project.link} target="_blank">
+					<img
+						class="invert dark:invert-0 w-10 h-10 hover:scale-125 duration-150"
+						alt="github"
+						src="icons/gh-w.png"
+					/>
+				</a>
+
+				<Carousel>
+					{#each project.image as img}
+						<div class="flex flex-col items-center h-[200px] lg:h-[400px] p-2">
+							<img class="w-full h-full rounded-lg" src={img} alt="projectimage" />
+						</div>
+					{/each}
+				</Carousel>
+
 				<div class="flex flex-row gap-10 mt-4 items-center justify-between">
-					<a href={project.link} target="_blank">
-						<img
-							class="invert dark:invert-0 w-10 h-10 hover:scale-125 duration-150"
-							alt="github"
-							src="icons/gh-w.png"
-						/>
-					</a>
 					{#if project.link_deployement != ''}
 						<a href={project.link_deployement} target="_blank">
 							<img
@@ -74,13 +83,6 @@
 						{/each}
 					</div>
 				</div>
-				<Carousel>
-					{#each project.image as img}
-						<div class="flex flex-col items-center h-[200px] lg:h-[400px] lg:p-10">
-							<img class="w-full h-full rounded-lg" src={img} alt="projectimage" />
-						</div>
-					{/each}
-				</Carousel>
 			</div>
 			<button
 				on:click

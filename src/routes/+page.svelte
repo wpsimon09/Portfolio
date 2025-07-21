@@ -3,13 +3,14 @@
 	import { quintOut } from 'svelte/easing';
 	import { browser } from '$app/environment';
 
-	import FirstSection from '$lib/components/Sections/First/FirstSection.svelte';
+	import Landing from '$lib/components/Sections/First/FirstSection.svelte';
 	import Footer from '$lib/components/Sections/Footer/Footer.svelte';
 	import SecondSection from '$lib/components/Sections/Second/Second.svelte';
 	import Third from '$lib/components/Sections/Third/Third.svelte';
 	import Fourth from '$lib/components/Sections/Fourth/Fourth.svelte';
 	import ProjectShow from '$lib/components/Sections/Second/Components/ProjectShow.svelte';
 	import { onMount } from 'svelte';
+	import FirstSection from '../lib/components/Sections/First/FirstSection.svelte';
 
 	let y = 20;
 

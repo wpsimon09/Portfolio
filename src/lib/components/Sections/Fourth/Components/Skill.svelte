@@ -5,7 +5,6 @@
 	export let _skill;
 
 	let offset;
-	let carousel;
 
 	const handleNextClick = () => {
 		carousel.goToNext();
