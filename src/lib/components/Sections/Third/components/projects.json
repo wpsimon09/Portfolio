@@ -1,5 +1,36 @@
 [
   {
+    "title": "Slang in wild",
+    "description": "A small, self-hosted app that lists open-source projects using the Slang shading language, aiming to improve discoverability and learning resources for this emerging GPU programming tool.",
+    "tech_stack": [
+      "SvelteKit",
+      "Azure database",
+      "MS Sql"
+    ],
+    "link": "",
+    "link_deployement": "https://slang-in-wild.com",
+    "image": [
+      "projects/slang-in-wild.png"
+    ]
+  },
+  {
+    "title": "Virtual Anatomy",
+    "description": "Developed an interactive human anatomy visualization tool using Unreal Engine to help students explore anatomy from any angle. Optimized a 46-million triangle model with 2GB of textures for real-time use, reducing render time from 20ms/frame to 8ms/frame. Added simulation features like heartbeat-synced blood flow using Niagara, animated rib cage movement, and a custom UI with tree view and simulation controls. Created maintainable code and detailed MkDocs documentation hosted as a website.",
+    "tech_stack": [
+      "Unreal Engine",
+      "Niagara",
+      "Blueprints",
+      "MkDocs",
+      "UI Framework"
+    ],
+    "link": "",
+    "link_deployement": "",
+    "image": [
+      "projects/virtual-anatomy-0.jpg",
+      "projects/virtual-anatomy-1.jpg"
+    ]
+  },
+  {
     "title": "Hangout Safari",
     "description": "Designed a web application to help students socialize and overcome social anxiety. It features a 3D interactive safari where you collect animals based on the number of social events attended.",
     "tech_stack": [
