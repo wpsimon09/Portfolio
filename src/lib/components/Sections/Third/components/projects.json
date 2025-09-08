@@ -1,5 +1,19 @@
 [
   {
+    "title": "Siggraph talk",
+    "preview": "Siggraph talk about my experience with Slang shading language ",
+    "description": "At SIGGRAPH 2025, I shared my experience with the Slang shading language. I discussed why I chose Slang, highlighted its strengths, and reflected on some challenges I encountered. I also showed how I leveraged modules to reuse the same shader across both ray tracing and rasterization pipelines, and concluded with a brief showcase of buffer device addresses.",
+    "tech_stack": [
+      "Public speking"
+    ],
+    "link": "",
+    "link_deployement": "https://www.youtube.com/watch?v=Y7uBfTxFnnA&t=1467s",
+    "image": [
+      "projects/siggraph-talk.png"
+    ],
+    "job": false
+  },
+  {
     "title": "Vulkan-RTX",
     "preview": "Real-time Vulkan renderer with rasterization and path tracing support.",
     "description": "A real-time physically based renderer using Vulkan with support for both classic rasterization and hardware-accelerated path tracing via the RayTracingPipeline. Features include forward rendering, real-time path tracing with RT cores, pixel-perfect ray-traced shadows, scene editing with gizmos, and material customization. It supports large-scale homogenus paricipating media rendering and uses a modern Vulkan-based architecture with Slang shaders, SPIR-V reflection, and multi-threaded texture loading.",
