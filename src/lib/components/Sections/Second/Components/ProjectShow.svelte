@@ -38,13 +38,15 @@
 					class="h-0.5 bg-zinc-800 text-slate-100 dark:bg-slate-50 w-full lg:w-full mt-4 dark:text-zinc-800"
 				></div>
 
-				<a class="my-4" href={project.link} target="_blank">
-					<img
-						class="invert dark:invert-0 w-10 h-10 hover:scale-125 duration-150"
-						alt="github"
-						src="icons/gh-w.png"
-					/>
-				</a>
+				{#if project.link != ''}
+					<a class="my-4" href={project.link} target="_blank">
+						<img
+							class="invert dark:invert-0 w-10 h-10 hover:scale-125 duration-150"
+							alt="github"
+							src="icons/gh-w.png"
+						/>
+					</a>
+				{/if}
 
 				<Carousel>
 					{#each project.image as img}
